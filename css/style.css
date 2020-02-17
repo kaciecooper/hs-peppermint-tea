@@ -8,6 +8,13 @@ font-weight: 900;
 font-style: normal;
 }
 
+p {
+font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+font-weight:normal;
+font-style:normal;
+}
+
+
 
 .intro-images{
 	height:100vh;
