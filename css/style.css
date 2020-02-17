@@ -1,6 +1,17 @@
 /* Enter your Styles below! */
 
+
+h1{
+	font-family:;
+}
+
+
+.intro-images{
+	height:100vh;
+}
+
 .intro-text{
+height:50vh;
 width:100%;
 background-color:#dbe3fd;
 }
@@ -9,6 +20,26 @@ background-color:#dbe3fd;
 	border:solid 2px #fff;
 }
 
+
+.briskness-section{
+	height:50vh;
+	background-color:#64e0ba;
+	border:solid 2px #fff;
+}
+
+
+.body-section{
+	height:50vh;
+	background-color:#59cfde;
+	border:solid 2px #fff;
+}
+
+
+.aroma-section{
+	height:50vh;
+	background-color:#4dad7a;
+	border:solid 2px #fff;
+}
 @media only screen and (min-width:768px) {
 
 }
