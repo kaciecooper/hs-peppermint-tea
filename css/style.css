@@ -1,11 +1,16 @@
 /* Enter your Styles below! */
 
+body{
+	width:100%;
+}
 
 h1{
 
 font-family: tenez, sans-serif;
 font-weight: 900;
 font-style: normal;
+font-size:30px;
+color:#64e0ba;
 }
 
 p {
@@ -16,40 +21,118 @@ font-style:normal;
 
 
 
+@font-face {
+    font-family: 'sporting_grotesqueregular';
+    src: url('font/sportinggrotesque-regular-webfont.woff2') format('woff2'),
+         url('font/sportinggrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*////////////////////////Nav//////////////////////////*/
+
+nav{
+	width:100%;
+	border: solid 1px #000;
+	margin:auto;
+}
+
+ul{
+	display:flex;
+	padding:10px;
+}
+
+li{
+	padding:10px;
+	margin:auto;
+}
+
+
+a{
+	text-decoration:none;
+	color:#000;
+}
+
+
+a:visited{
+	color:#000;
+}
+/*////////////////////////Page 1//////////////////////////*/
+
 .intro-images{
 	height:100vh;
 }
 
 .intro-text{
-height:50vh;
+height:40vh;
 width:100%;
 background-color:#dbe3fd;
+padding:40px;
 }
 
 .pg1-paragraph{
 	border:solid 2px #fff;
+	width:30%;
+	line-height:1.5em;
+	padding:30px;
 }
 
+
+.briskness-section-text, .body-section-text, .aroma-section-text{
+
+	border:solid 2px #fff;
+	width:30%;
+	line-height:1.5em;
+	padding:30px;
+
+}
 
 .briskness-section{
-	height:50vh;
-	background-color:#64e0ba;
-	border:solid 2px #fff;
+height:50vh;
+width:100%;
+background-color:#64e0ba;
+padding:40px;
 }
 
-
 .body-section{
-	height:50vh;
-	background-color:#59cfde;
-	border:solid 2px #fff;
+height:50vh;
+width:100%;
+background-color:#59cfde;
+padding:40px;
 }
 
 
 .aroma-section{
-	height:50vh;
-	background-color:#4dad7a;
-	border:solid 2px #fff;
+height:50vh;
+width:100%;
+background-color:#4dad7a;
+padding:40px;
+
 }
+
+.peppermint-tin-section{
+	border:solid 2px green;
+	margin:auto;
+	width:100%;
+	padding:40px;
+}
+
+
+.peppermint-tin-img{
+	display:flex;
+	margin:auto;
+	width:30%;
+
+}
+
+
+.mint-1-img, .mint-2-img, .mint-3-img {
+	width:60%;
+	margin-left:0;
+}
+
+
+
 @media only screen and (min-width:768px) {
 
 }

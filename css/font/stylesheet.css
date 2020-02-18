@@ -3,17 +3,22 @@
 
 
 @font-face {
-font-family: "sporting_grotesquebold";
-src: url("https://kaciecooper.github.io/hs-peppermint-tea/css/font/sporting_sporting_grotesquebold.eot");
-src: url("https://kaciecooper.github.io/hs-peppermint-tea/css/font/sporting_sporting_grotesquebold.woff") format("woff"),
-url("https://kaciecooper.github.io/hs-peppermint-tea/css/font/sporting_sporting_grotesquebold.otf") format("opentype"),
-url("https://kaciecooper.github.io/hs-peppermint-tea/css/font/sporting_gsporting_grotesquebold.svg#filename") format("svg");
+    font-family: 'sporting_grotesquebold';
+    src: url('sportinggrotesque-bold-webfont.woff2') format('woff2'),
+         url('sportinggrotesque-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
+
+
+
 @font-face {
-font-family: "sporting_grotesqueregular";
-src: url("https://kaciecooper.github.io/hs-peppermint-tea/css/font/sporting_grotesqueregular.eot");
-src: url("https://kaciecooper.github.io/hs-peppermint-tea/css/font/sporting_grotesqueregular.woff") format("woff"),
-url("https://kaciecooper.github.io/hs-peppermint-tea/css/font/sporting_grotesqueregular.otf") format("opentype"),
-url("https://kaciecooper.github.io/hs-peppermint-tea/css/font/sporting_grotesqueregular.svg#filename") format("svg");
+    font-family: 'sporting_grotesqueregular';
+    src: url('sportinggrotesque-regular-webfont.woff2') format('woff2'),
+         url('sportinggrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
