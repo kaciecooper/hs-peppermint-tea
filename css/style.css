@@ -1,355 +1,271 @@
-@import url(https://fonts.googleapis.com/css?family=Pacifico);
 
-*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+  /* Enter your Styles below! */
 
-
-
-header{
-  width:100%;
-  height:100vh;
-  background-color:#fff;
-
+.panel {
+  height: 50%;
+  width: 100%;
 }
 
-
-section{
-  width:100%;
-  min-height:100%;
-  float:left;
-  position:relative
+body {
+  width: 100%;
 }
 
-.sticky{
-  height:100%;
-  width:50%;
-  float:left;
-  position:absolute;
-
-}
-.sticky.fixy{
-  position:fixed; 
-  top:0;
-  left:0;
+h1 {
+  font-family: tenez, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 30px;
+  color: #64e0ba;
 }
 
-
-
-
-.red{
-   background: url("http://placekitten.com/200/300");
- 
-}
-
-.scrolling{
-  float:right;
-  width:50%;
- 
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Enter your Styles below! */
-
-    .panel {
-        height: 50%;
-        width: 100%;
-    }
-    
-
-body{
-	width:100%;
-}
-
-
-h1{
-
-font-family: tenez, sans-serif;
-font-weight: 900;
-font-style: normal;
-font-size:30px;
-color:#64e0ba;
+h3 {
+  font-family: tenez, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 45px;
+  color: #f3923d;
+  text-align: center;
 }
 
 p {
-font-family: 'sporting_grotesqueregular', Arial, sans-serif;
-font-weight:normal;
-font-style:normal;
+  font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
-
-
 
 @font-face {
-    font-family: 'sporting_grotesqueregular';
-    src: url('font/sportinggrotesque-regular-webfont.woff2') format('woff2'),
-         url('font/sportinggrotesque-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'sporting_grotesqueregular';
+  src: url('font/sportinggrotesque-regular-webfont.woff2') format('woff2'), url('font/sportinggrotesque-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
 
 /*////////////////////////Nav//////////////////////////*/
 
-nav{
-	width:100%;
-	border: solid 1px #000;
-	margin:auto;
-   
+nav {
+  width: 100%;
+  margin: auto;
 }
 
-ul{
-	display:flex;
-	padding:10px;
+ul {
+  display: flex;
+  padding: 10px;
 }
 
-li{
-	padding:10px;
-	margin:auto;
-      z-index:99;
+li {
+  padding: 10px;
+  margin: auto;
+  z-index: 99;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+   font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size:12px;
+}
+
+a:visited {
+  color: #000;
 }
 
 
-a{
-	text-decoration:none;
-	color:#000;
-     
-}
-
-
-a:visited{
-	color:#000;
-}
 /*////////////////////////Page 1//////////////////////////*/
-body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        background-color:#f7faf8;
-    }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #f7faf8;
+}
 
 .tea-tin {
-        background: url("../images/peppermint-tea.png")
-        center center;
-        background-size: 30%;
-        background-repeat: no-repeat;
-        border:solid 2px green;
-        height:100vh;
-        z-index:-4;
-        position:fixed;
-        top:-30px;
-
-     transform: scale3d(1.1, 1.1, 1.1);
-        opacity: 0.2;
-        animation: scaler 1s ease-out;
-        animation-fill-mode: forwards;
-        z-index:1;
-    }
+  background: url("../images/peppermint-tea.png") center center;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  border: solid 2px green;
+  height: 100vh;
+  z-index: -4;
+  position: fixed;
+  top: -30px;
+  transform: scale3d(1.1, 1.1, 1.1);
+  opacity: 0.2;
+  animation: scaler 1s ease-out;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
 
 .mint-1 {
-        background: url("../images/mint1.png")
-        center center;
-        background-size: 60%;
-        background-repeat: no-repeat;
-         border:solid 2px blue;
-           height:50vh;
-             z-index:-1;
-                top:300px;
-       transform: scale3d(1.1, 1.1, 1.1);
-        opacity: 0.2;
-        animation: scaler 1s ease-out;
-        animation-fill-mode: forwards;
-        z-index:1;
-    }
+  background: url("../images/mint1.png") center center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  border: solid 2px blue;
+  height: 50vh;
+  z-index: -1;
+  top: 300px;
+  transform: scale3d(1.1, 1.1, 1.1);
+  opacity: 0.2;
+  animation: scaler 1s ease-out;
+  animation-fill-mode: forwards;
+  z-index: 1;
+}
 
 .mint-2 {
-        background: url("../images/mint2.png") 
-        center center;
-        background-size: 60%;
-        background-repeat: no-repeat;
-         border:solid 2px red;
-           height:50vh;
-           z-index:-2;
-             top:300px;
-        transform: scale3d(1.3, 1.3, 1.3);
-        opacity: 0.1;
-        animation: scaler 1.2s ease-out;
-        animation-fill-mode: forwards;
-        z-index:-1;
-    }
+  background: url("../images/mint2.png") center center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  border: solid 2px red;
+  height: 50vh;
+  z-index: -2;
+  top: 300px;
+  transform: scale3d(1.3, 1.3, 1.3);
+  opacity: 0.1;
+  animation: scaler 1.2s ease-out;
+  animation-fill-mode: forwards;
+  z-index: -1;
+}
 
 .mint-3 {
-        background: url("../images/mint3.png") 
-        center center;
-        background-size: 60%;
-        background-repeat: no-repeat;
-         border:solid 2px purple;
-           height:50vh;
-              z-index:-3;
-                top:300px;
-     transform: scale3d(1.5, 1.5, 1.5);
-        opacity: 0.1;
-        animation: scaler 1.2s ease-out;
-        animation-fill-mode: forwards;
-        z-index:-2;
-    }
+  background: url("../images/mint3.png") center center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  border: solid 2px purple;
+  height: 50vh;
+  z-index: -3;
+  top: 300px;
+  transform: scale3d(1.5, 1.5, 1.5);
+  opacity: 0.1;
+  animation: scaler 1.2s ease-out;
+  animation-fill-mode: forwards;
+  z-index: -2;
+}
 
 @keyframes moveUp {
-        100% {
-            transform: translate3d(0, 0, 0);
-            opacity: 1;
-        }
-    }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
 
 @keyframes scaler {
-        100% {
-            transform: scale3d(1, 1, 1);
-            opacity: 1;
-        }
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
+  }
+}
+
+.page1-4 {
+  background-color: #fff;
+  border: solid 2px yellow;
+  height: 200vh;
+  z-index: 1;
+  top: 600px;
+}
+
+.intro-text {
+  height: 40vh;
+  width: 100%;
+  background-color: #dbe3fd;
+  padding: 40px;
+}
+
+.pg1-paragraph {
+  border: solid 2px #fff;
+  width: 30%;
+  line-height: 1.5em;
+  padding: 30px;
+}
+
+.peppermint-tin-section {
+  border: solid 2px green;
+  margin: auto;
+  width: 100%;
+  padding: 40px;
 }
 
 
-.page1-4{
-  background-color:#fff;
-  border:solid 2px yellow; 
-  height:200vh;
-  z-index:1;
-  top:600px;
-
-
-} 
-
-
-
-
-.intro-text{
-height:40vh;
-width:100%;
-background-color:#dbe3fd;
-padding:40px;
-}
-
-.pg1-paragraph{
-    border:solid 2px #fff;
-    width:30%;
-    line-height:1.5em;
-    padding:30px;
-}
-
-
-.peppermint-tin-section{
-    border:solid 2px green;
-    margin:auto;
-    width:100%;
-    padding:40px;
-}
 /*//////////////////////////Page 2//////////////////////////*/
 
-.page2-intro{
-    height:100vh;
-    background-color:#fff;
+.page2-intro {
+  height: 100vh;
+  background-color: #fff;
 }
 
-
-.briskness-section-text, .body-section-text, .aroma-section-text{
-
-    border:solid 2px #fff;
-    width:30%;
-    line-height:1.5em;
-    padding:30px;
+.briskness-section-text,
+.body-section-text,
+.aroma-section-text {
+  border: solid 2px #fff;
+  width: 50%;
+  line-height: 1.5em;
+  padding: 30px;
+  margin: auto;
 }
 
-.briskness-section{
-height:100vh;
-width:100%;
-background-color:#64e0ba;
-padding:40px;
+.briskness-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #64e0ba;
+  padding: 100px;
 }
 
-.body-section{
-height:100vh;
-width:100%;
-background-color:#59cfde;
-padding:40px;
+.body-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #59cfde;
+  padding: 100px;
 }
 
-
-.aroma-section{
-height:100vh;
-width:100%;
-background-color:#4dad7a;
-padding:40px;
-
+.aroma-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #4dad7a;
+  padding: 100px;
 }
 
-
-
-
-
-    .container:before
-    {
-        content: '';
-        height: 100%;
-        float: left;
-    }
-
-.header
-{
-    margin-bottom: 10px;
-    background-color: #6ea364;
-}
-.content
-{
-    position: relative;
-    z-index: 1;
-}
-    .content:after
-    {
-        content: '';
-        clear: both;
-        display: block;
-    }
-
-.wrapper
-{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-    .wrapper > div
-    {
-        height: 100%;
-    }
-
-.leftcontent
-{
-    
-    overflow: auto;
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
 }
 
-.rightcontent
-{
-   
-    float: right;
-    margin-left: 10px;
+section {
+  width: 100%;
+  min-height: 100%;
+  float: left;
+  position: relative
 }
 
+.sticky {
+  height: 100%;
+  width: 50%;
+  float: left;
+  position: absolute;
+}
 
+.sticky.fixy {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
+.red {
+  background: url("http://placekitten.com/200/300");
+}
+
+.scrolling {
+  float: right;
+  width: 50%;
+}
 
 
 /*//////////////////////////FOOTER//////////////////////////*/
 
-footer{
-  width:100%;
-  margin:auto;
+footer {
+  width: 100%;
+  margin: auto;
   color: #ccc;
   margin: auto;
   width: 100%;
@@ -357,19 +273,10 @@ footer{
   font-size: 14px;
 }
 
+
 /*////////////////////////////////////////////////////*/
 
-
-
-
-
-
-
-
-
-@media only screen and (min-width:768px) {
-
-}
+@media only screen and (min-width:768px) {}
 
 @media only screen and (min-width:1224px) {
 
