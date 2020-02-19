@@ -1,4 +1,64 @@
+
+
+header{
+  height:200vh;
+  width:100%;
+
+  background-color:#fff;
+}
+
+
+section{
+  width:100%;
+  min-height:100%;
+  float:left;
+  position:relative
+}
+
+.sticky{
+  height:500vh;
+  width:50%;
+  float:left;
+  position:absolute;
+
+}
+.sticky.fixy{
+  position:fixed; 
+  
+}
+
+.sticky.bottom{
+  position:absolute;
+  bottom:0;
+}
+
+
+.left{
+     background: url("http://placekitten.com/200/300")
+
+}
+
+.scrolling{
+  float:right;
+  width:50%;
+
+}
+
+
+
+
+
+
+
+
+
 /* Enter your Styles below! */
+
+    .panel {
+        height: 50%;
+        width: 100%;
+    }
+    
 
 body{
 	width:100%;
@@ -36,6 +96,7 @@ nav{
 	width:100%;
 	border: solid 1px #000;
 	margin:auto;
+   
 }
 
 ul{
@@ -46,12 +107,14 @@ ul{
 li{
 	padding:10px;
 	margin:auto;
+      z-index:99;
 }
 
 
 a{
 	text-decoration:none;
 	color:#000;
+     
 }
 
 
@@ -63,24 +126,8 @@ body {
         margin: 0;
         padding: 0;
         height: 100%;
-        background-color:#d3d3d3;
+        background-color:#f7faf8;
     }
-    .wrapper {
-        width: 100vw;
-        height: 1000vh;
-        overflow: hidden;
-    }
-
-
-.pos {
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-    }
-
-
 
 
 .tea-tin {
@@ -89,12 +136,16 @@ body {
         background-size: 30%;
         background-repeat: no-repeat;
         border:solid 2px green;
+        height:100vh;
+        z-index:-4;
+        position:fixed;
+        top:-30px;
 
-      /*  transform: scale3d(1.1, 1.1, 1.1);
+     transform: scale3d(1.1, 1.1, 1.1);
         opacity: 0.2;
         animation: scaler 1s ease-out;
         animation-fill-mode: forwards;
-        z-index:1;*/
+        z-index:1;
     }
 
 .mint-1 {
@@ -102,11 +153,15 @@ body {
         center center;
         background-size: 60%;
         background-repeat: no-repeat;
-      /*  transform: scale3d(1.1, 1.1, 1.1);
+         border:solid 2px blue;
+           height:50vh;
+             z-index:-1;
+                top:300px;
+       transform: scale3d(1.1, 1.1, 1.1);
         opacity: 0.2;
         animation: scaler 1s ease-out;
         animation-fill-mode: forwards;
-        z-index:1;*/
+        z-index:1;
     }
 
 .mint-2 {
@@ -114,11 +169,15 @@ body {
         center center;
         background-size: 60%;
         background-repeat: no-repeat;
-       /* transform: scale3d(1.3, 1.3, 1.3);
+         border:solid 2px red;
+           height:50vh;
+           z-index:-2;
+             top:300px;
+        transform: scale3d(1.3, 1.3, 1.3);
         opacity: 0.1;
         animation: scaler 1.2s ease-out;
         animation-fill-mode: forwards;
-        z-index:-1;*/
+        z-index:-1;
     }
 
 .mint-3 {
@@ -126,13 +185,17 @@ body {
         center center;
         background-size: 60%;
         background-repeat: no-repeat;
-      /*  transform: scale3d(1.5, 1.5, 1.5);
+         border:solid 2px purple;
+           height:50vh;
+              z-index:-3;
+                top:300px;
+     transform: scale3d(1.5, 1.5, 1.5);
         opacity: 0.1;
         animation: scaler 1.2s ease-out;
         animation-fill-mode: forwards;
-        z-index:-2;*/
+        z-index:-2;
     }
-/*
+
 @keyframes moveUp {
         100% {
             transform: translate3d(0, 0, 0);
@@ -146,76 +209,136 @@ body {
             opacity: 1;
         }
 }
-*/
-/*
-.containter{
-    height:1200vh;
-    padding-top:100px;
+
+
+.page1-4{
+  background-color:#fff;
+  border:solid 2px yellow; 
+  height:200vh;
+  z-index:1;
+  top:600px;
+
+
+} 
+
+
+
+
+.intro-text{
+height:40vh;
+width:100%;
+background-color:#dbe3fd;
+padding:40px;
+}
+
+.pg1-paragraph{
+    border:solid 2px #fff;
+    width:30%;
+    line-height:1.5em;
+    padding:30px;
 }
 
 
-.tea-tin{
-    border: solid 2px blue;
-    background: url("../images/peppermint-tea.png") no-repeat;
-    background-size: 60%;
-    width: 100%;
-    height: 500px;
-    top: 100px;
-    z-index: -4;
+.peppermint-tin-section{
+    border:solid 2px green;
     margin:auto;
-    position: fixed;
-    
+    width:100%;
+    padding:40px;
 }
+/*//////////////////////////Page 2//////////////////////////*/
 
-.mint-1{
-    border: solid 2px green;
-    background: url("../images/mint1.png") no-repeat ;
-    background-size: 60%;
-    width: 100%;
-    height: 100vh;
-    z-index: -3;
-    position:relative;
-
-}
-
-
-
-
-.mint-2{
-    border: solid 2px purple;
-    background: url("../images/mint2.png") no-repeat ;
-    background-size: 60%;
-    width: 100%;
-    height: 100vh;
-    z-index: -4;
- 
-}
-.mint-3{
-    border: solid 2px red;
-    background: url("../images/mint3.png") no-repeat;
-    background-size: 60%;
-    width: 100%;
+.page2-intro{
     height:100vh;
-    z-index: -1;
+    background-color:#fff;
+}
+
+
+.briskness-section-text, .body-section-text, .aroma-section-text{
+
+    border:solid 2px #fff;
+    width:30%;
+    line-height:1.5em;
+    padding:30px;
+}
+
+.briskness-section{
+height:100vh;
+width:100%;
+background-color:#64e0ba;
+padding:40px;
+}
+
+.body-section{
+height:100vh;
+width:100%;
+background-color:#59cfde;
+padding:40px;
+}
+
+
+.aroma-section{
+height:100vh;
+width:100%;
+background-color:#4dad7a;
+padding:40px;
 
 }
 
 
-.intro{
-    background-color: #fff;
-    width: 100%;
-    min-width: 1280px;
-    max-width: 1280px;
-    height: 1100px;
+
+
+
+    .container:before
+    {
+        content: '';
+        height: 100%;
+        float: left;
+    }
+
+.header
+{
+    margin-bottom: 10px;
+    background-color: #6ea364;
+}
+.content
+{
+    position: relative;
     z-index: 1;
+}
+    .content:after
+    {
+        content: '';
+        clear: both;
+        display: block;
+    }
+
+.wrapper
+{
     position: absolute;
-    top: 2150px;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+    .wrapper > div
+    {
+        height: 100%;
+    }
+
+.leftcontent
+{
+    
+    overflow: auto;
+}
+
+.rightcontent
+{
+   
+    float: right;
+    margin-left: 10px;
 }
 
 
-*/
+
+
 
 /*//////////////////////////FOOTER//////////////////////////*/
 
