@@ -59,11 +59,6 @@ $(window).scroll(function (event) {
       $('.bottom').css({'max-height': window_height+'px'}); 
     }
   
-    if(scroll > posTop_s2 && scroll < posBottom_s2){
-      $('.sticky').removeClass('fixy');
-      $('.sticky').removeClass('bottom');
-      $('#s2 .sticky').addClass('fixy');
-    }
       
 });
 
@@ -80,9 +75,6 @@ function getValues(){
   posTop_s1 = header_height;  
   posTop_s2 = posTop_s1 + height_s1;
   
-  //get bottom position 3rd
-  posBottom_s1 = posTop_s2 - header_height;
-  posBottom_s2 = doc_height;
 }
 
 
