@@ -25,6 +25,7 @@ h3 {
   font-size: 45px;
   color: #f3923d;
   text-align: center;
+
 }
 
 p {
@@ -197,33 +198,41 @@ body {
 .briskness-section-text,
 .body-section-text,
 .aroma-section-text {
-  border: solid 2px #fff;
-  width: 50%;
   line-height: 1.5em;
-  padding: 30px;
-  margin: auto;
+  padding: 70px;
+  margin:auto;
+  height:40vh;
+
 }
 
-.briskness-section {
+
+.briskness-section, .body-section, .aroma-section {
   height: 100vh;
   width: 100%;
+  background-color: #fff;
+
+}
+
+.briskness-section-text{
   background-color: #64e0ba;
-  padding: 100px;
 }
 
-.body-section {
-  height: 100vh;
-  width: 100%;
+.body-section-text {
   background-color: #59cfde;
-  padding: 100px;
 }
 
-.aroma-section {
-  height: 100vh;
-  width: 100%;
+.aroma-section-text {
   background-color: #4dad7a;
-  padding: 100px;
 }
+
+.briskness-para, .body-para, .aroma-para{
+  border: solid 2px #fff;
+  width:100%;
+  padding:10px;
+  margin:auto;
+
+} 
+
 
 header {
   width: 100%;
@@ -252,7 +261,7 @@ section {
 }
 
 .red {
-  background: url("http://placekitten.com/200/300");
+  background: url("../images/tea-img1.jpg");
 }
 
 .scrolling {
