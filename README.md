@@ -1,2 +1,7 @@
-# project-two-template
-Project two template for des 341
+Image Credit:
+
+Page 1:
+
+Page 2:
+
+Page 3:
