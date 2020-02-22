@@ -108,6 +108,53 @@ document.querySelector('scroll-container').scrollLeft = 100%;
 
 
 
+var cwidth = document.getElementById("width");
+        var nwidth = document.getElementById("nwidth");
+        var cheight = document.getElementById("height");
+        var nheight = document.getElementById("nheight");
+        var cborderradius = document.getElementById("borderradius");
+        var nborderradius = document.getElementById("nborderradius");
+        var copacity = document.getElementById("opacity");
+        var nopacity = document.getElementById("nopacity");
+        var crotate = document.getElementById("rotate");
+        var nrotate = document.getElementById("nrotate");
+        var object = document.getElementById("target");
+        var width = 0;
+        var height = 0;
+        var borderradius = 0;
+        var opacity = 1;
+        var rotate = 0;
+
+        cwidth.addEventListener("input", function(){
+            nwidth.innerHTML = this.value;
+            width = this.value;
+            object.style.width = width+ "px"; 
+        });
+
+        cheight.addEventListener("input", function(){
+            nheight.innerHTML = this.value;
+            height = this.value;
+            object.style.height = height+ "px"; 
+        });
+
+        cborderradius.addEventListener("input", function(){
+            nborderradius.innerHTML = this.value;
+            borderradius = this.value;
+            object.style.borderRadius = borderradius+ "px"; 
+        });
+
+        copacity.addEventListener("input", function(){
+            nopacity.innerHTML = this.value/parseFloat(500);
+            console.log(opacity);
+            opacity = this.value/parseFloat(500);
+            object.style.opacity = opacity;
+        });
+
+        crotate.addEventListener("input", function(){
+            nrotate.innerHTML = this.value;
+            rotate = this.value;
+            object.style.transform = "rotate("+rotate+"deg)";
+        });
 
     // End of Your Code . Don't delete that line below!!
 });
