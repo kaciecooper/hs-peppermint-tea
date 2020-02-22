@@ -104,6 +104,10 @@ $(function() {
 
 
 
+document.querySelector('scroll-container').scrollLeft = 100%;
+
+
+
 
     // End of Your Code . Don't delete that line below!!
 });
