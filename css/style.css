@@ -247,7 +247,7 @@ body {
 }
 
 
-.pg1-paragraph {
+.peppermint-paragraph {
   border: solid 2px #dbe3fd;
   width: 40%;
   line-height: 1.5em;
@@ -286,7 +286,7 @@ body {
 
 }
 
-.mint1{
+.coco1{
  background: url("../images/coco1.png") no-repeat center;
  background-size:cover;
  transform:translateZ(-750px) scale(1.5);
@@ -294,7 +294,7 @@ body {
 
 }
 
-.mint2{
+.coco2{
  background: url("../images/coco2.png") no-repeat center;
  background-size:cover;
  transform:translateZ(-650px) scale(1.5);
@@ -303,7 +303,7 @@ body {
 }
 
 
-.mint3{
+.coco3{
  background: url("../images/coco3.png") no-repeat center;
  background-size:cover;
  transform:translateZ(-1000px) scale(1.5);
@@ -311,7 +311,14 @@ body {
 
 }
 
-
+.coconut-paragraph {
+  border: solid 2px #f4badf;
+  width: 40%;
+  line-height: 1.5em;
+  padding:30px;
+  margin-top:200px;
+  margin-left:50px;
+}
 
 
 
@@ -326,14 +333,14 @@ body {
 }
 
 .gray-tea-tin{
- background: url("../images/gray-tea-tin.png") no-repeat center;
+ background: url("../images/gray-tin.png") no-repeat center;
  background-size:cover;
  transform:translateZ(-850px) scale(1.5);
  z-index:3;
 
 }
 
-.mint1{
+.gray1{
  background: url("../images/gray1.png") no-repeat center;
  background-size:cover;
  transform:translateZ(-750px) scale(1.5);
@@ -341,7 +348,7 @@ body {
 
 }
 
-.mint2{
+.gray2{
  background: url("../images/gray2.png") no-repeat center;
  background-size:cover;
  transform:translateZ(-650px) scale(1.5);
@@ -350,12 +357,22 @@ body {
 }
 
 
-.mint3{
+.gray3{
  background: url("../images/gray3.png") no-repeat center;
  background-size:cover;
  transform:translateZ(-1000px) scale(1.5);
  z-index:1;
 
+}
+
+
+.gray-paragraph {
+  border: solid 2px #91c3e8;
+  width: 40%;
+  line-height: 1.5em;
+  padding:30px;
+  margin-top:200px;
+  margin-left:50px;
 }
 
 
