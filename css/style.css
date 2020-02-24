@@ -264,7 +264,107 @@ body {
 
 
 
+/*//////////////////////////Coconut//////////////////////////*/
+
+
+
+
+
+.green-coconut{
+  width:100%;
+  margin:auto;
+  text-align: center;
+  margin-top:160px;
+  color:#f4badf;
+}
+
+.coconut-tea-tin{
+ background: url("../images/coconut-tin.png") no-repeat center;
+ background-size:cover;
+ transform:translateZ(-850px) scale(1.5);
+ z-index:3;
+
+}
+
+.mint1{
+ background: url("../images/coco1.png") no-repeat center;
+ background-size:cover;
+ transform:translateZ(-750px) scale(1.5);
+ z-index:2;
+
+}
+
+.mint2{
+ background: url("../images/coco2.png") no-repeat center;
+ background-size:cover;
+ transform:translateZ(-650px) scale(1.5);
+ z-index:4;
+
+}
+
+
+.mint3{
+ background: url("../images/coco3.png") no-repeat center;
+ background-size:cover;
+ transform:translateZ(-1000px) scale(1.5);
+ z-index:1;
+
+}
+
+
+
+
+
+/*//////////////////////////Earl Gray//////////////////////////*/
+
+.earl-gray{
+  width:100%;
+  margin:auto;
+  text-align: center;
+  margin-top:160px;
+  color:#91c3e8;
+}
+
+.gray-tea-tin{
+ background: url("../images/gray-tea-tin.png") no-repeat center;
+ background-size:cover;
+ transform:translateZ(-850px) scale(1.5);
+ z-index:3;
+
+}
+
+.mint1{
+ background: url("../images/gray1.png") no-repeat center;
+ background-size:cover;
+ transform:translateZ(-750px) scale(1.5);
+ z-index:2;
+
+}
+
+.mint2{
+ background: url("../images/gray2.png") no-repeat center;
+ background-size:cover;
+ transform:translateZ(-650px) scale(1.5);
+ z-index:4;
+
+}
+
+
+.mint3{
+ background: url("../images/gray3.png") no-repeat center;
+ background-size:cover;
+ transform:translateZ(-1000px) scale(1.5);
+ z-index:1;
+
+}
+
+
+
 /*//////////////////////////Page 2//////////////////////////*/
+
+
+
+
 
 .page2-intro {
   height: 100vh;
