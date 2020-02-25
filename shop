@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Winter Earl Gray</title>
+    <title>The Best Brew</title>
     <meta name="viewport" content="width=device-width">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -17,62 +17,44 @@
 
 <body>
 
-   
- 
     <nav>
 
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="brew.html">The Best Brew</a></li>
-            <li><a href="shop.html">Shop</a></li>
+            <li><a href="satchet.html">Inside the Satchet</a></li>
         </ul>
     </nav>
 
     <main>
 
 
-<nav>
-  <a href="index.html">Peppermint Herbal</a>
-  <a href="coconut.html">Green Coconut</a>
-  <a href="earl.html">Winter Earl Gray</a>
-</nav>
+      
 
 
 
-        <div class="wrapper">
-            
-               <section lass="name-text">
-                    <h1 class="earl-gray" >
-                        Winter Earl Gray
-                    </h1>
-                </section>
-
-            <section class="parallax_group hero-container">
-
-                <section class="parallax_layer gray-tea-tin"></section>
-                <section class="parallax_layer gray1"></section>
-                <section class="parallax_layer gray2"></section>
-                <section class="parallax_layer gray3"></section>
-            </section>
-
-        
-
-           <section class="intro-text">
-                    <div>
-                    <p class="gray-paragraph">
-                        A perennial favorite, our Winter White Earl Grey gives an evergreen classic a deliciously light twist. Beautiful Chinese Mutan White tea forms the base of this blend, providing light floral elements and a delicately grassy note. Natural lemony bergamot oil gives deep, multifaceted citrus qualities to the blend. A pleasant blend perfect for enjoying whenever the wish for something a bit different strikes.
-                    </p>
-                    </div>
-                    <div>
-                    <img src="./images/gray-lifestyle.png" class="peppermint-lifestyle-img">
-                    </div>
-                </section>
 
 
 
-             
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     </main>
