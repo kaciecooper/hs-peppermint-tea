@@ -429,7 +429,24 @@ section {
 .earl-shop{
 
 
+}
 
+/*////////////////////////About//////////////////////////*/
+
+
+.harney{
+  padding:40px;
+  color:#000;
+  width:100%;
+  margin:auto;
+  text-align: center;
+  border:solid 2px black;
+}
+
+
+.logo{
+
+border:solid, 2px, blue;
 
 }
 
