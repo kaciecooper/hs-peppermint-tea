@@ -157,7 +157,13 @@ var cwidth = document.getElementById("width");
         });
 
 
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
 
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
 
 
     // End of Your Code . Don't delete that line below!!
