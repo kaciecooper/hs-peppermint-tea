@@ -165,24 +165,15 @@ var cwidth = document.getElementById("width");
 
 
 
-var range = $('.input-range'),
-    value = $('.range-value');
-    
-value.html(range.attr('value'));
-
-range.on('input', function(){
-    value.html(this.value);
-}); 
 
 
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
 
-
-
-
-
-
-
-
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
 
 
 

@@ -35,12 +35,13 @@
 
 
 
-<div class="range-slider">
-    <input class="input-range" type="range" value="5" min="1" max="5">
-    <span class="range-value"></span>
-</div> 
 
+<h1>Round Range Slider</h1>
 
+<div class="slidecontainer">
+  <input type="range" min="1" max="5" value="5" class="slider" id="myRange">
+  <h6>Value: <span id="demo"></span></h6>
+</div>
 
 
 
@@ -77,7 +78,21 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js">
     </script> <!-- link for your script file -->
+    <script>
+        
 
+
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
+
+
+    </script>
 
     <!-- link for your script file -->
     <script src="js/script.js"></script>
