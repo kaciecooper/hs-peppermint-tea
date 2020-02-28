@@ -518,7 +518,6 @@ section {
   color:#f3923d;
   width:100%;
   margin:auto;
-  border:solid 2px green;
   height:20vh;
   text-align: center;
   padding:30px;
@@ -549,6 +548,24 @@ section {
   width:70%;
   padding-top:10px;
   line-height:1.5em;
+}
+
+
+.peppermint-reveal, .coconut-reveal, .earl-reveal{
+margin: auto;
+  width: 100%;
+  padding: 10px;
+  display:none;
+
+}
+
+.green-coconut, .peppermint-herbal, .earl-gray{
+  margin-top:30px;
+}
+
+#tea_reveal1, #tea_reveal2, #tea_reveal3{
+display:block;
+margin:auto;
 }
 
 
