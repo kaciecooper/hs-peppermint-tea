@@ -36,17 +36,58 @@
 
 
 
-<h1>Round Range Slider</h1>
+<h1 class="h1-brew">Find Your Best Brew</h1>
 
-<div class="slidecontainer">
-  <input type="range" min="1" max="5" value="5" class="slider" id="myRange">
-  <h6>Value: <span id="demo"></span></h6>
+
+
+<section class="briskness">
+    <div class="briskness-text">
+         <h2> Briskness </h2>
+        <p class="brew-para">
+        Refers to a tea's ability to make your mouth pucker, also known as astringency. Some astringency makes tea brisk & desirable (like white wine). Too much briskness can be a problem, but may be controlled by reducing the brewing time.
+        </p>
+    </div>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="5" value="5" class="slider" id="myRange">
+          <h6>Value: <span id="demo"></span></h6>
+        </div>
+
+</section>
+
+
+<section class="body">
+    <div class="body-text"> 
+    <h2> Body </h2>
+    <p class="brew-para">
+        Refers to whether or not a tea feels thick in the mouth such as Assam or light such as a white tea. Sometimes this body comes from dissolved solids from the leaves like the Assam, and sometimes it is from all the amino acids like Ichiban Sencha.
+    </p>
 </div>
+        <div class="slidecontainer">
+          <input type="range" min="1" max="5" value="5" class="slider" id="myRange">
+          <h6>Value: <span id="demo"></span></h6>
+        </div>
+
+</section>
 
 
 
+<section class="aroma">
+   <div class="aroma-text">
+    <h2> Aroma </h2>
+    <p class="brew-para">
+        RRefers to whether or not the tea has a pleasant smell, often the most prized part of tea. That makes sense, since humans can smell much better than we can taste. Sometimes the pleasant smell is teased out of the tea leaf by a skilled tea maker, sometimes it is flavor blended in here by our blenders.
+    </p>
+</div>
+       <div class="slidecontainer">
+          <input type="range" min="1" max="5" value="5" class="slider" id="myRange">
+          <h6>Value: <span id="demo"></span></h6>
+        </div>
 
+</section>
 
+<section class="tea-reveal">
+
+</section>
 
 
 
@@ -82,7 +123,7 @@
         
 
 
-var slider = document.getElementById("myRange");
+var slider = document.getElementById("myRange1");
 var output = document.getElementById("demo");
 output.innerHTML = slider.value;
 
@@ -91,6 +132,7 @@ slider.oninput = function() {
 }
 
 
+}
 
     </script>
 

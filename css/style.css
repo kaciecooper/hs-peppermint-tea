@@ -1,44 +1,7 @@
 
  /*-----------------------Shopping ---------------------*/
 
-/*--------------------Slider------------------------*/
-.slidecontainer {
-  width: 100%;
-}
 
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-}
 
 
 /*.slider-section{
@@ -138,6 +101,14 @@ h1 {
   color: #64e0ba;
 }
 
+h2{
+  font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size:30px;
+  color:#f3923d;
+}
+
 h3 {
   font-family: tenez, sans-serif;
   font-weight: 900;
@@ -145,6 +116,16 @@ h3 {
   font-size: 45px;
   color: #f3923d;
   text-align: center;
+
+}
+
+
+h6{font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size:20px;
+  color:#f3923d;
+  text-align:center;
 
 }
 
@@ -525,6 +506,91 @@ section {
 
 
 }
+/*////////////////////////Brew//////////////////////////*/
+
+
+.h1-brew{
+  color:#f3923d;
+  width:100%;
+  margin:auto;
+  border:solid 2px green;
+  height:20vh;
+  text-align: center;
+  padding:30px;
+}
+
+
+
+
+
+.briskness, .body, .aroma {
+  height:30vh;
+  display:grid;
+  grid-template-columns: 60% 40%;
+  padding:40px;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+
+.briskness-text, .body-text, .aroma-text {
+
+  background-color:#dbe3fd;
+  padding:30px;
+  
+}
+
+.brew-para{
+  width:70%;
+  padding-top:10px;
+  line-height:1.5em;
+}
+
+
+/*--------------------Slider------------------------*/
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 70%;
+  height: 15px;
+  border-radius: 5px;
+  background: #dbe3fd;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin:30px;
+ 
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #f3923d;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #f3923d;
+  cursor: pointer;
+}
+
+
+
+
 
 /*////////////////////////About//////////////////////////*/
 
