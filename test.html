@@ -1,57 +1,119 @@
 
-    <section class="tea-gallery">
-        <div>
-            <img src ="./images/peppermint-shop1.png" class="peppermint-shop1" alt="Peppermint Herbal Tea Tin at an angle ">
-            <img src ="./images/peppermint-shop2.png" class="peppermint-shop2" alt="Peppermint Herbal Tea Tin front facing">
-        </div>
-
-         <div >
-            <img src ="./images/coconut-shop1.png" class="coconut-shop1" alt="Green Tea with Coconut tin at an angle">
-            <img src ="./images/coconut-shop2.png" class="coconut-shop2" alt="Green Tea with Coconut Tin front facing">
-        </div>
-
-
-        <div>
-            <img src ="./images/gray-shop1.png" class="gray-shop1" alt="Winter Earl Gray Tea Tin at an angle">
-            <img src ="./images/gray-shop1.png" class="gray-shop2" alt="Winter Earl Gray Tea Tin front facing">
-
-        </div>
-    </section>    
-
-
-      
 
 
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- meyer-reset is a special css library that overrides all the ugle default css styles that come with html5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/bac1rno.css">
+<style>
 
 
+</style>
 
+</head>
 
+<body>
 
- <section class="slider-section">
+    <nav>
 
-    <p>Briskness Range Slider</p>
-                <div class="slidecontainer-brisk">
-                  <input type="range" min="1" max="5" value="5" class="slider" id="myRange">
-                  <p>Value: <span id="demo"></span></p>
-                </div>
-
-     <p>Body Range Slider</p>
-                <div class="slidecontainer-body">
-                  <input type="range" min="1" max="5" value="5" class="slider" id="myRange">
-                  <p>Value: <span id="demo"></span></p>
-                </div>
-
-
-     <p>Aroma Range Slider</p>
-                <div class="slidecontainer-aroma">
-                  <input type="range" min="1" max="5" value="5" class="slider" id="myRange">
-                  <p>Value: <span id="demo"></span></p>
-                </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="brew.html">The Best Brew</a></li>
+            <li><a href="satchet.html">Inside the Satchet</a></li>
+        </ul>
+    </nav>
 
 
 
 
-        </section>
+
+    <main>
+
+
+
+
+<input id="briskness-slider" type="range" value="1" step="1" min="1" max="5">
+<br>
+  <h6>Briskness level: <output class="briskness-slider"> </output>
+  </h6>
+
+
+<input id="body-slider" type="range" value="1" step="1" min="1" max="5">
+<br>
+  <h6>Body level: <output class="body-slider"></output>
+</h6>
+
+<input id="aroma-slider" type="range" value="1" step="1" min="1" max="5">
+<br> 
+  <h6>Aroma level: <output class="aroma-slider"></output>
+</h6>
+
+
+    </main>
+
+
+    <footer>
+        <!-- footer content here -->
+        &copy;Harney & Sons Peppermint Herbal
+    </footer>
+    <!-- link for jquery -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js">
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js">
+    </script> <!-- link for your script file -->
+   <script>
+$(function() {
+  var output = document.querySelectorAll('output')[0];
+  
+  $(document).on('input', 'input[type="range"]', function(e) {
+   
+        document.querySelector('output.'+this.id).innerHTML = e.target.value;
+  });
+  
+  $('input[type=range]').rangeslider({
+    polyfill: false
+  });
+});
+
+</script>
+
+    <!-- link for your script file -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+   
+
+
+
+
 
 

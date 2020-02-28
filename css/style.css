@@ -1,3 +1,8 @@
+output{
+  display:block;
+}
+
+
 
  /*-----------------------Shopping ---------------------*/
 
@@ -548,9 +553,7 @@ section {
 
 
 /*--------------------Slider------------------------*/
-.slidecontainer {
-  width: 100%;
-}
+
 
 .slider {
   -webkit-appearance: none;
