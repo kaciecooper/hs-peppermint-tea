@@ -73,7 +73,6 @@
    font-family: 'sporting_grotesqueregular', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-   content: '\f07A';
    color: #fff;
    position: absolute;
    font-size: 1.5em;
@@ -106,10 +105,10 @@
    color: rgba(43, 45, 66, 0.7);
    font-size: 1.5em;
 }
- 
- 
 
 
+.peppermint-shop{
+}
  /*-----------------------Shopping ---------------------*/
 
 
