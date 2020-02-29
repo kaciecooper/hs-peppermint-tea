@@ -24,10 +24,73 @@
             <li><a href="about.html">About</a></li>
             <li><a href="brew.html">The Best Brew</a></li>
             <li><a href="shop.html">Shop</a></li>
+            <li><i class='fa fa-shopping-cart'>
+      <span class='counter'></span>
+    </i></li>
         </ul>
     </nav>
 
     <main>
+
+    
+<div class='row'>
+  <div class='product--blue'>
+    <div class='product_inner'>
+      <img src='http://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300'>
+      <p>Peppermint Herbal</p>
+    <br>
+      <p>Price $5.99</p>
+      <button>Add to basket</button>
+    </div>
+    <div class='product_overlay'>
+      <h2>Added to basket</h2>
+      <i class='fa fa-check'></i>
+    </div>
+  </div>
+  <div class='product--orange'>
+    <div class='product_inner'>
+      <img src='http://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300'>
+      <p>Green Tea with Coconut</p>
+      <br>
+      <p>Price $5.99</p>
+      <button>Add to basket</button>
+    </div>
+    <div class='product_overlay'>
+      <h2>Added to basket</h2>
+      <i class='fa fa-check'></i>
+    </div>
+  </div>
+  <div class='product--red'>
+    <div class='product_inner'>
+      <img src='http://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300'>
+      <p>Winter Earl Gray</p>
+      <br>
+      <p>Price $5.99</p>
+      <button>Add to basket</button>
+    </div>
+    <div class='product_overlay'>
+      <h2>Added to basket</h2>
+      <i class='fa fa-check'></i>
+    </div>
+  </div>
+  
+
+
+  
+  <div class='product--pink'>
+    <div class='product_inner'>
+      <img src='http://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300'>
+      <p>All Three Teas</p>
+      <p>Peppermint Herbal, Green Tea with Coconut, and Winter Earl Gray</p>
+      <p>Price $5.99</p>
+      <button>Add to basket</button>
+    </div>
+    <div class='product_overlay'>
+      <h2>Added to basket</h2>
+      <i class='fa fa-check'></i>
+    </div>
+  </div>
+</div>
 
 
     </main>
@@ -57,6 +120,45 @@
     </script> <!-- link for your script file -->
     <!-- link for your script file -->
     <script src="js/script.js"></script>
+    <script>
+        $(function() {
+
+  "use strict"
+  
+  var init = "No items yet!";
+  var counter = 0;
+
+  // Initial Cart
+  $(".counter").html(init);
+  
+  // Add Items To Basket
+  function addToBasket() {
+    counter++;
+    $(".counter").html(counter).animate({
+      'opacity' : '0'
+    },300, function() {
+      $(".counter").delay(300).animate({
+        'opacity' : '1'
+      })
+    })
+  }
+
+  // Add To Basket Animation
+  $("button").on("click", function() {
+    addToBasket(); $(this).parent().parent().find(".product_overlay").css({
+      'transform': ' translateY(0px)',
+      'opacity': '1',
+      'transition': 'all ease-in-out .45s'
+    }).delay(1500).queue(function() {
+      $(this).css({
+        'transform': 'translateY(-500px)',
+        'opacity': '0',
+        'transition': 'all ease-in-out .45s'
+      }).dequeue();
+    });
+  });
+});
+    </script>
 </body>
 
 </html>
