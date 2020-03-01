@@ -1,6 +1,9 @@
 
+
+
+
  header {
-   width: 95%;
+   width: 100%;
    display: flex;
    justify-content: flex-end;
    flex-flow: row wrap;
@@ -285,8 +288,91 @@ a:visited {
   color: #000;
 }
 
+/*////////////////////////Home//////////////////////////*/
 
-/*////////////////////////Page 1//////////////////////////*/
+.app {
+  padding: var(--gutter) 0;
+  display: grid;
+  grid-gap: var(--gutter) 0;
+  grid-template-columns: var(--gutter) 3fr var(--gutter);
+  align-content: start;
+
+}
+
+.app > * {
+  grid-column: 2 / -2;
+}
+
+.app > .full {
+  grid-column: 1 / -1;
+}
+
+.hs {
+  display: grid;
+  grid-gap: calc(var(--gutter) / 2);
+  grid-template-columns: 10px;
+  
+  grid-auto-flow: column;
+  grid-auto-columns: calc(50% - var(--gutter) * 2);
+
+  overflow-x: scroll;
+
+  padding-bottom: calc(.75 * var(--gutter));
+  margin-bottom: calc(-.25 * var(--gutter));
+}
+
+.hs:before,
+.hs:after {
+  content: '';
+  width: 10px;
+}
+
+
+/* Demo styles */
+
+
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.app {
+  width: 100%;
+  height: 667px;
+  background: #000;
+  overflow-y: scroll;
+}
+
+.hs > li,
+.item {
+  padding: calc(var(--gutter) / 2 * 1.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+}
+
+
+
+.no-scrollbar {
+  scrollbar-width: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+
+
+
+
+/*////////////////////////Peppermint//////////////////////////*/
 
 body {
   margin: 0;
