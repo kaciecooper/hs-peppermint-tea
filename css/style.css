@@ -1,7 +1,4 @@
 
-
-
-
  header {
    width: 100%;
    display: flex;
@@ -290,86 +287,77 @@ a:visited {
 
 /*////////////////////////Home//////////////////////////*/
 
-.app {
-  padding: var(--gutter) 0;
-  display: grid;
-  grid-gap: var(--gutter) 0;
-  grid-template-columns: var(--gutter) 3fr var(--gutter);
-  align-content: start;
+
+
+
+.home-text{
+  width:100%;
+  margin:auto;
+  display:grid;
+  text-align: center;
+  padding:30px;
+  line-height:1.5em;
+  background:lightblue;
+  height:50vh;
 
 }
 
-.app > * {
-  grid-column: 2 / -2;
-}
-
-.app > .full {
-  grid-column: 1 / -1;
-}
-
-.hs {
-  display: grid;
-  grid-gap: calc(var(--gutter) / 2);
-  grid-template-columns: 10px;
-  
-  grid-auto-flow: column;
-  grid-auto-columns: calc(50% - var(--gutter) * 2);
-
-  overflow-x: scroll;
-
-  padding-bottom: calc(.75 * var(--gutter));
-  margin-bottom: calc(-.25 * var(--gutter));
-}
-
-.hs:before,
-.hs:after {
-  content: '';
-  width: 10px;
-}
-
-
-/* Demo styles */
-
-
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-.app {
-  width: 100%;
-  height: 667px;
-  background: #000;
-  overflow-y: scroll;
-}
-
-.hs > li,
-.item {
-  padding: calc(var(--gutter) / 2 * 1.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  border-radius: 8px;
+.hs-logo{
+width:20%;
+margin:auto;
 }
 
 
 
-.no-scrollbar {
-  scrollbar-width: none;
-  margin-bottom: 0;
-  padding-bottom: 0;
+.tea-section-h1{
+  color:#ccc;
+  text-align: center;
+  font-size:40px;
+   background:lightgray;
+   width:100%;
+
+
 }
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
+
+.home-tea-images{
+  width:100%;
+  margin:auto;
+  border-top:solid 1px #000;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding:40px;
+}
+
+.peppermint-home-img, .coconut-home-img, .earl-home-img{
+width:60%;
+padding:50px;
+border:solid 1px red;
 }
 
 
 
+.home-about{
+   background:lightgray;
+   padding:40px;
+   width:100%;
+   height:50vh;
 
+}
 
+.about-h1{
+  color:#ccc;
+  font-size:40px;
+  padding:30px;
+  text-align:center;
+}
+
+.about-para{
+  width:50%;
+  padding-left:25%;
+  padding-bottom:30px;
+  line-height: 1.5em;
+
+}
 
 
 /*////////////////////////Peppermint//////////////////////////*/
