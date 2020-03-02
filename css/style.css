@@ -1,35 +1,6 @@
 
-
-
-
-
-
-scroll-container {
-  display: block;
-  width: 100%;
-  height: 200px;
-  background-color:#ccc;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  white-space: nowrap;
-  margin: 0 auto;
-  text-align: center;
-}
-scroll-page {
-  display: inline-block;
-  height: 100px;
-  font-size: 30px;
-  width: 400px;
-}
-
 /*---------------------------------------------*/
-  /* Enter your Styles below! */
 
-/*.panel {
-  height: 50%;
-  width: 100%;
-}
-*/
 body {
   width: 100%;
 }
@@ -573,7 +544,7 @@ section {
 
 
 #peppermint-reveal, #coconut-reveal, #earl-reveal{
-margin: auto;
+  margin: auto;
   width: 100%;
   padding: 10px;
   display:none;
@@ -589,7 +560,9 @@ display:block;
 margin:auto;
 }
 
-
+input{
+  
+}
 
  /*-----------------------Shopping ---------------------*/
 
@@ -630,23 +603,24 @@ margin:auto;
    position: relative;
    flex: auto;
 }
- .product-peppermint {
-   border:solid 1px #64e0ba;
+ .product-peppermint{
+   background-color: #64e0ba;
   }
- .product-coconut {
-   border:solid 1px #f4badf;
+ .product-coconut  {
+ background-color:#f4badf;
   }
- .product-earl {
-   border:solid 1px #91c3e8;
+ .product-earl{
+  background-color: #91c3e8;
   }
 
  .product-all {
-   border:solid 1px #ccc;}
+   background-color: #ccc}
    
  .product img, .product-peppermint img, .product-coconut img, .product-earl img, .product-all img {
    max-width: 100%;
    height: auto !important;
    text-align: center;
+   
 }
  .product_inner {
    display: flex;
@@ -656,6 +630,8 @@ margin:auto;
  .product_inner p {
    color: rgba(255, 255, 255, 0.9);
 }
+
+
  .product_inner button {
    border: 1px solid rgba(255, 255, 255, 0.5);
    color: #fff;
