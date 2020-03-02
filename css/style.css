@@ -97,13 +97,16 @@ a:visited {
 /*////////////////////////Home//////////////////////////*/
 
 
+.banner{min-height:50vh;
+}
+
 .banner h1{
   font-size:200px;
   color:#000;
   background-color:#fff;
   width:100%;
   text-align:center;
-  height:70vh;
+  min-height:50vh;
   mix-blend-mode: screen;
   position: absolute;
   padding-top:80px;
