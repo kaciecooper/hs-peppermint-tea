@@ -1,88 +1,3 @@
-input[type=range] {
-  -webkit-appearance: none;
-  padding: 20px ;
-  width: 80%;
-}
-input[type=range]:focus {
-  outline: none;
-}
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #3071a9;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
-}
-input[type=range]::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -14px;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #367ebd;
-}
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #3071a9;
-  border-radius: 1.3px;
-  border: 0.2px solid #010101;
-}
-input[type=range]::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-}
-input[type=range]::-ms-track {
-  width: 100%;
-  height: 8.4px;
-  cursor: pointer;
-  background: transparent;
-  border-color: transparent;
-  border-width: 16px 0;
-  color: transparent;
-}
-input[type=range]::-ms-fill-lower {
-  background: #2a6495;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-input[type=range]::-ms-fill-upper {
-  background: #3071a9;
-  border: 0.2px solid #010101;
-  border-radius: 2.6px;
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-}
-input[type=range]::-ms-thumb {
-  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  border: 1px solid #000000;
-  height: 36px;
-  width: 16px;
-  border-radius: 3px;
-  background: #ffffff;
-  cursor: pointer;
-}
-input[type=range]:focus::-ms-fill-lower {
-  background: #3071a9;
-}
-input[type=range]:focus::-ms-fill-upper {
-  background: #367ebd;
-}
 
 /*---------------------------------------*/
 
@@ -252,6 +167,7 @@ a:visited {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding:40px;
+  margin-bottom:20px;
   }
 
 .peppermint-home-img, .coconut-home-img, .earl-home-img{
@@ -260,7 +176,7 @@ a:visited {
   }
 
 .home-about{
-
+  border-top: solid 1px #000;
   padding:40px;
   width:100%;
   height:40vh;
@@ -505,6 +421,51 @@ body {
 
 /*//////////////////////////Best Brew//////////////////////////*/
 
+/*------Slider---------*/
+input[type=range] {
+  -webkit-appearance: none;
+  padding: 20px ;
+  width: 80%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  background: #dbe3fd;
+  border-radius: 1.3px;
+}
+input[type=range]::-webkit-slider-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 15px;
+  background: #f3923d;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #dbe3fd;
+}
+input[type=range]::-moz-range-track {
+   width: 100%;
+  height: 15px;
+  cursor: pointer;
+  background: #dbe3fd;
+  border-radius: 1.3px;
+}
+input[type=range]::-moz-range-thumb {
+ height: 25px;
+  width: 25px;
+  border-radius: 15px;
+  background: #f3923d;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -5px;
+}
+/*------------------------*/
 
 
 
@@ -518,7 +479,7 @@ body {
 .body-section-text,
 .aroma-section-text {
   line-height: 1.5em;
-  padding: 70px;
+  padding: 60px;
   margin:auto;
   height:40vh;
 
@@ -526,7 +487,7 @@ body {
 
 
 .briskness-section, .body-section, .aroma-section {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   background-color: #fff;
 
@@ -627,6 +588,7 @@ section {
   width:70%;
   padding-top:10px;
   line-height:1.5em;
+  font-size:15px;
 }
 
 
