@@ -621,7 +621,7 @@ margin:auto;
    flex-flow: row wrap;
    margin:auto;
 }
- .product, .product-peppermint, .product--orange, .product--red, .product--green, .product--yellow, .product--pink {
+ .product, .product-peppermint, .product-coconut, .product-earl, .product-all {
    width: 15em;
    height: auto;
    padding: 2em;
@@ -631,16 +631,19 @@ margin:auto;
    flex: auto;
 }
  .product-peppermint {
-   background-color: blue;
-}
- .product--orange {
-   background-color: orange;}
- .product--red {
-   background-color: red;}
+   border:solid 1px #64e0ba;
+  }
+ .product-coconut {
+   border:solid 1px #f4badf;
+  }
+ .product-earl {
+   border:solid 1px #91c3e8;
+  }
 
- .product--pink {
-   background-color: pink;}
- .product img, .product--blue img, .product--orange img, .product--red img, .product--green img, .product--yellow img, .product--pink img {
+ .product-all {
+   border:solid 1px #ccc;}
+   
+ .product img, .product-peppermint img, .product-coconut img, .product-earl img, .product-all img {
    max-width: 100%;
    height: auto !important;
    text-align: center;
