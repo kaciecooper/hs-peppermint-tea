@@ -33,10 +33,10 @@
 
     
 <div class='row'>
-  <div class='product--blue'>
+  <div class='product-peppermint'>
     <div class='product_inner'>
-      <img src='./images/peppermint-shop1.png'  width='300' class="peppermint-shop">
-      <img src='./images/peppermint-shop2.png'  width='300' class="peppermint-shop">
+      <img src='./images/peppermint-shop1.png'  width='300' class="peppermint-shop1">
+      <img src='./images/peppermint-shop2.png'  width='300' class="peppermint-shop2">
       <p>Peppermint Herbal</p>
     <br>
       <p>Price $5.99</p>
@@ -160,13 +160,12 @@
 });
 
 
-        $(document).ready(function(){
-  $('.mymultiplediv').mouseover(function() {
-      myvar = this.id;
-      $("div.mydiv").hide();
-      $('#div'+myvar).show();
-  });
-});
+    $(".product-peppermint").hover(function () {
+
+        $(".peppermint-shop1").hide();
+        $(".peppermint-shop2").show();
+    
+    });
     </script>
 </body>
 
