@@ -36,6 +36,7 @@
   <div class='product--blue'>
     <div class='product_inner'>
       <img src='./images/peppermint-shop1.png'  width='300' class="peppermint-shop">
+      <img src='./images/peppermint-shop2.png'  width='300' class="peppermint-shop">
       <p>Peppermint Herbal</p>
     <br>
       <p>Price $5.99</p>
@@ -155,6 +156,15 @@
         'transition': 'all ease-in-out .45s'
       }).dequeue();
     });
+  });
+});
+
+
+        $(document).ready(function(){
+  $('.mymultiplediv').mouseover(function() {
+      myvar = this.id;
+      $("div.mydiv").hide();
+      $('#div'+myvar).show();
   });
 });
     </script>

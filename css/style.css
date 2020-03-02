@@ -621,7 +621,7 @@ margin:auto;
    flex-flow: row wrap;
    margin:auto;
 }
- .product, .product--blue, .product--orange, .product--red, .product--green, .product--yellow, .product--pink {
+ .product, .product-peppermint, .product--orange, .product--red, .product--green, .product--yellow, .product--pink {
    width: 15em;
    height: auto;
    padding: 2em;
@@ -630,7 +630,7 @@ margin:auto;
    position: relative;
    flex: auto;
 }
- .product--blue {
+ .product-peppermint {
    background-color: blue;
 }
  .product--orange {
@@ -704,7 +704,8 @@ margin:auto;
 }
 
 
-.peppermint-shop{
+.peppermint-shop2{
+  display:none;
 }
 
 /*//////////////////////////FOOTER//////////////////////////*/
