@@ -1,175 +1,6 @@
 
- header {
-   width: 100%;
-   display: flex;
-   justify-content: flex-end;
-   flex-flow: row wrap;
-}
- header ul {
-   padding: 1.2em 0 0.5em;
-}
- header span {
-   padding: 0 0 0 0.5em;
-}
- header span, header i {
-   color: #2b2d42;
-}
- header i:nth-of-type(2) {
-   cursor: pointer;
-}
- .row {
-   width: 70%;
-   justify-content: flex;
-   display: flex;
-   flex-flow: row wrap;
-   margin:auto;
-}
- .product, .product--blue, .product--orange, .product--red, .product--green, .product--yellow, .product--pink {
-   width: 15em;
-   height: auto;
-   padding: 2em;
-   margin: 1em;
-   overflow: hidden;
-   position: relative;
-   flex: auto;
-}
- .product--blue {
-   background-color: blue;
-}
- .product--orange {
-   background-color: orange;}
- .product--red {
-   background-color: red;}
-
- .product--pink {
-   background-color: pink;}
- .product img, .product--blue img, .product--orange img, .product--red img, .product--green img, .product--yellow img, .product--pink img {
-   max-width: 100%;
-   height: auto !important;
-   text-align: center;
-}
- .product_inner {
-   display: flex;
-   align-items: center;
-   flex-flow: column wrap;
-}
- .product_inner p {
-   color: rgba(255, 255, 255, 0.9);
-}
- .product_inner button {
-   border: 1px solid rgba(255, 255, 255, 0.5);
-   color: #fff;
-   padding: 1em 3em;
-   margin: 1em 0 0 0;
-   background: none;
-   cursor: pointer;
-   transition: background ease-in 0.25s;
-}
- .product_inner button:hover {
-   background: rgba(255, 255, 255, 1);
-   color: #2b2d42;
-}
- .product_inner button:before {
-   font-family: 'sporting_grotesqueregular', Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-   color: #fff;
-   position: absolute;
-   font-size: 1.5em;
-   margin: 0 -1.5em;
-}
- .product_inner button:hover:before {
-   color: #2b2d42;
-}
- .product_overlay {
-   background: rgba(255, 255, 255, 0.9);
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: 0;
-   transform: translateY(-500px);
-   opacity: 0;
-   display: flex;
-   flex-flow: column wrap;
-   justify-content: center;
-   align-items: center;
-}
- .product_overlay h2 {
-   color: rgba(43, 45, 66, 0.7);
-   font-size: 1.2em;
-   margin: 1em 0;
-}
- .product_overlay i {
-   color: rgba(43, 45, 66, 0.7);
-   font-size: 1.5em;
-}
 
 
-.peppermint-shop{
-}
- /*-----------------------Shopping ---------------------*/
-
-
-
-
-/*.slider-section{
-  width:100%;
-  border:solid 2px #000;
-  padding:40px;
-}
-
-
-
-
-
-
-
-.slidecontainer-brisk, .slidecontainer-body, .slidecontainer-aroma {
-  width: 70%;
-  padding:50px;
-}
-
-.slidecontainer {
-  width: 100%;
-}
-
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
-  border-radius: 5px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #4CAF50;
-  cursor: pointer;
-}
-
-/*---------------------------------------*/
 
 
 
@@ -281,12 +112,47 @@ a {
   font-size:12px;
 }
 
+a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
 a:visited {
   color: #000;
 }
 
 /*////////////////////////Home//////////////////////////*/
 
+
+.banner h1{
+  font-size:200px;
+  color:#000;
+  background-color:#fff;
+  width:100%;
+  text-align:center;
+  height:70vh;
+  mix-blend-mode: screen;
+  position: absolute;
+  padding-top:80px;
+  top:20%;
+  line-height: 1em;
+
+}
+
+
+.tea-h1{
+    font-size:250px;
+
+}
+
+
+ video {
+  width: 800px;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 
 
@@ -295,69 +161,71 @@ a:visited {
   margin:auto;
   display:grid;
   text-align: center;
-  padding:30px;
-  line-height:1.5em;
-  background:lightblue;
-  height:50vh;
+  z-index:5;
+  }
 
-}
 
 .hs-logo{
-width:20%;
-margin:auto;
+  margin:auto;  
+  }
+
+
+.home-para-section{
+   border-bottom:solid 1px #000;
+   text-align:center;
+   line-height: 1.3em;
+   padding:20px;
+   margin-bottom:50px;
 }
-
-
 
 .tea-section-h1{
   color:#ccc;
   text-align: center;
   font-size:40px;
-   background:lightgray;
-   width:100%;
+  width:100%;
+  margin-top:60px;
+  padding:10px;
 
-
-}
+  }
 
 .home-tea-images{
   width:100%;
   margin:auto;
-  border-top:solid 1px #000;
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding:40px;
-}
+  }
 
 .peppermint-home-img, .coconut-home-img, .earl-home-img{
-width:60%;
-padding:50px;
-border:solid 1px red;
-}
-
-
+  width:70%;
+  padding:50px;
+  }
 
 .home-about{
-   background:lightgray;
-   padding:40px;
-   width:100%;
-   height:50vh;
 
-}
+  padding:40px;
+  width:100%;
+  height:40vh;
+/*  background: url("../images/about-img.png") no-repeat center;*/
+
+
+  }
 
 .about-h1{
   color:#ccc;
   font-size:40px;
   padding:30px;
   text-align:center;
-}
+  }
 
 .about-para{
+
   width:50%;
   padding-left:25%;
-  padding-bottom:30px;
+  padding-bottom:70px;
   line-height: 1.5em;
-
-}
+  font-size:14px;
+  }
 
 
 /*////////////////////////Peppermint//////////////////////////*/
@@ -577,7 +445,7 @@ body {
   margin-left:50px;
 }
 
-/*//////////////////////////Page 2//////////////////////////*/
+/*//////////////////////////Best Brew//////////////////////////*/
 
 
 
@@ -664,32 +532,6 @@ section {
 
 
 
-/*////////////////////////SHOP//////////////////////////*/
-
-.tea-gallery{
-  display:grid;
-  grid-template-columns:1fr 1fr 1fr;
-}
-
-.peppermint-shop, .coconut-shop, .earl-shop{
-  width:100%;
-
-}
-
-
-.peppermint-shop{
-
-}
-
-.coconut-shop{
-
-
-}
-
-.earl-shop{
-
-
-}
 /*////////////////////////Brew//////////////////////////*/
 
 
@@ -748,84 +590,121 @@ margin:auto;
 }
 
 
-/*--------------------Slider------------------------*/
 
-input[type=range] {
-  height: 38px;
-  -webkit-appearance: none;
-  margin: 10px 0;
-  margin-top:20%;
-  width: 70%;
-  padding-left:40px;
+ /*-----------------------Shopping ---------------------*/
+
+
+
+
+ header {
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   flex-flow: row wrap;
 }
-input[type=range]:focus {
-  outline: none;
+ header ul {
+   padding: 1.2em 0 0.5em;
 }
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 10px;
-  cursor: pointer;
-  animate: 0.2s;
-  
-  background: #dbe3fd;
-  border-radius: 5px;
-
+ header span {
+   padding: 0 0 0 0.5em;
 }
-input[type=range]::-webkit-slider-thumb {
-  
-
-  height: 20px;
-  width: 20px;
-  border-radius: 50px;
-  background: #f3923d;
-  cursor: pointer;
-  margin-top:-5px;
-  -webkit-appearance: none;
- 
+ header span, header i {
+   color: #2b2d42;
 }
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background:#dbe3fd;
+ header i:nth-of-type(2) {
+   cursor: pointer;
 }
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 10px;
-  cursor: pointer;
-  animate: 0.2s;
-  background: #3071A9;
-  border-radius: 5px;
-  border: 1px solid #000000;
+ .row {
+   width: 70%;
+   justify-content: flex;
+   display: flex;
+   flex-flow: row wrap;
+   margin:auto;
+}
+ .product, .product--blue, .product--orange, .product--red, .product--green, .product--yellow, .product--pink {
+   width: 15em;
+   height: auto;
+   padding: 2em;
+   margin: 1em;
+   overflow: hidden;
+   position: relative;
+   flex: auto;
+}
+ .product--blue {
+   background-color: blue;
+}
+ .product--orange {
+   background-color: orange;}
+ .product--red {
+   background-color: red;}
+
+ .product--pink {
+   background-color: pink;}
+ .product img, .product--blue img, .product--orange img, .product--red img, .product--green img, .product--yellow img, .product--pink img {
+   max-width: 100%;
+   height: auto !important;
+   text-align: center;
+}
+ .product_inner {
+   display: flex;
+   align-items: center;
+   flex-flow: column wrap;
+}
+ .product_inner p {
+   color: rgba(255, 255, 255, 0.9);
+}
+ .product_inner button {
+   border: 1px solid rgba(255, 255, 255, 0.5);
+   color: #fff;
+   padding: 1em 3em;
+   margin: 1em 0 0 0;
+   background: none;
+   cursor: pointer;
+   transition: background ease-in 0.25s;
+}
+ .product_inner button:hover {
+   background: rgba(255, 255, 255, 1);
+   color: #2b2d42;
+}
+ .product_inner button:before {
+   font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+   color: #fff;
+   position: absolute;
+   font-size: 1.5em;
+   margin: 0 -1.5em;
+}
+ .product_inner button:hover:before {
+   color: #2b2d42;
+}
+ .product_overlay {
+   background: rgba(255, 255, 255, 0.9);
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   transform: translateY(-500px);
+   opacity: 0;
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+}
+ .product_overlay h2 {
+   color: rgba(43, 45, 66, 0.7);
+   font-size: 1.2em;
+   margin: 1em 0;
+}
+ .product_overlay i {
+   color: rgba(43, 45, 66, 0.7);
+   font-size: 1.5em;
 }
 
 
-
-
-
-
-
-/*////////////////////////About//////////////////////////*/
-
-
-.harney{
-  padding:40px;
-  color:#000;
-  width:100%;
-  margin:auto;
-  text-align: center;
-  border:solid 2px black;
-}
-
-
-.logo{
-
-border:solid, 2px, blue;
-
-}
-
-/*//////////////////////////shop//////////////////////////*/
-
-.tea-gallery{
-  display:grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.peppermint-shop{
 }
 
 /*//////////////////////////FOOTER//////////////////////////*/
