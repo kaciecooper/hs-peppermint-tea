@@ -34,7 +34,7 @@
 
 <h1 class="h1-brew">Find Your Best Brew</h1>
 
-
+<form class="teaForm">
 
 <section class="briskness">
     <div class="briskness-text">
@@ -90,6 +90,10 @@
 </div>
 
 
+</form>
+<button onclick="submiy()">Find my tea</button>
+
+
 </section>
 
 <section class="tea-slider-reveal">
@@ -123,7 +127,7 @@
 
     <footer>
         <!-- footer content here -->
-        &copy;Harney & Sons Peppermint Herbal
+         &copy;Harney & Sons Fine Tea
     </footer>
     <!-- link for jquery -->
 
@@ -154,10 +158,19 @@ $(function() {
   });
 });
 
-
-
-
     </script>
+
+<script>
+  $('#teaForm').on('submit', function(){
+  let brisk = $('#briskness-slider').val()
+  let body = $('#body-slider').val()
+  let aroma = $('#aroma-slider').val()
+
+
+  alert('briskness: ' + brisk + ' body: ' + body + ' aroma: ' + aroma)
+});
+</script>
+
 
     <!-- link for your script file -->
     <script src="js/script.js"></script>
