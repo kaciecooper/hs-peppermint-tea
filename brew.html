@@ -33,7 +33,7 @@
 
 
 <h1 class="h1-brew">Find Your Best Brew</h1>
-
+<p class="brew-para"> Choose your prefered levels of Tea Briskness, Body, and Aroma, to find your best tea.</p>
 <form class="teaForm">
 
 <section class="briskness">
@@ -43,8 +43,10 @@
         Refers to a tea's ability to make your mouth pucker, also known as astringency. Some astringency makes tea brisk & desirable (like white wine). Too much briskness can be a problem, but may be controlled by reducing the brewing time.
         </p>
     </div>
-<div>
 
+
+<div>
+<h2> Step 1</h2>
 <input id="briskness-slider" type="range"   value="1" step="1" min="1" max="5">
 <br>
 
@@ -55,6 +57,7 @@
 </section>
 
 
+
 <section class="body">
     <div class="body-text"> 
     <h2> Body </h2>
@@ -62,7 +65,10 @@
         Refers to whether or not a tea feels thick in the mouth such as Assam or light such as a white tea. Sometimes this body comes from dissolved solids from the leaves like the Assam, and sometimes it is from all the amino acids like Ichiban Sencha.
     </p>
 </div>
+
+
 <div>
+<h2> Step 2</h2>
     <input id="body-slider" type="range" value="1" step="1" min="1" max="5">
 <br>
   <h6>Body level: <output class="body-slider"></output>
@@ -73,7 +79,6 @@
 
 
 
-
 <section class="aroma">
    <div class="aroma-text">
     <h2> Aroma </h2>
@@ -81,8 +86,11 @@
         Refers to whether or not the tea has a pleasant smell, often the most prized part of tea. That makes sense, since humans can smell much better than we can taste. Sometimes the pleasant smell is teased out of the tea leaf by a skilled tea maker, sometimes it is flavor blended in here by our blenders.
     </p>
 </div>  
+
 <div>
 
+
+<h2> Step 3</h2>
 <input id="aroma-slider" type="range" value="1" step="1" min="1" max="5">
 <br> 
   <h6>Aroma level: <output class="aroma-slider"></output>

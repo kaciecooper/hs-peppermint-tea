@@ -567,7 +567,10 @@ section {
 }
 
 
-
+.brew-para{
+  width:100%;
+  padding:40px;
+}
 
 
 .briskness, .body, .aroma {
