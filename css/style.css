@@ -90,7 +90,7 @@ li {
   z-index: 99;
 }
 
-a {
+a, .counter {
   text-decoration: none;
   color: #000;
    font-family: 'sporting_grotesqueregular', Arial, sans-serif;
@@ -673,7 +673,6 @@ margin:auto;
 }
 
  /*-----------------------Shopping ---------------------*/
-
 
 
 
