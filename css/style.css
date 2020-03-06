@@ -1,6 +1,23 @@
-.peppermint-home-hover {
+.home-peppermint-hover {
   display: none;
 }
+
+#peppermint-learn{
+  text-align:center;
+  color:#64e0ba;
+}
+
+
+#coconut-learn{
+  text-align:center;
+  color:#f4badf;
+}
+
+#earl-learn{
+  text-align:center;
+  color:#91c3e8;
+}
+
 
 
 /*---------------------------------------*/
@@ -188,8 +205,9 @@ video {
 .home-peppermint,
 .home-peppermint-hover {
   width: 100%;
-  border: solid 1px red;
 }
+
+.home-peppermint
 
 .home-peppermint-hover {
   display: none;
@@ -355,7 +373,7 @@ body {
 }
 
 .coco-paragraph {
-  border: solid 2px #dbe3fd;
+  border: solid 2px #f4badf;
   width: 40%;
   line-height: 1.5em;
   padding: 30px;

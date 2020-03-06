@@ -38,21 +38,32 @@
          <div>
             <h1 class="tea-section-h1">Our Teas</h1>
             <section class="home-tea-images">
-               <div>
+               <div class="peppermint-container">
                   <a href="peppermint.html">
-                  <img src='./images/home-peppermint.png'  class="home-peppermint">
+                  <img src='./images/home-peppermint.png' id="peppermint-hover-text" class="home-peppermint">
+
                   </a>
                   <img src='./images/home-peppermint-hover.png'  class="home-peppermint-hover">
+                 
+                  <p id="peppermint-learn" style="display: none">Learn More</p>
+
                </div>
+              
                <div>
                   <a href="coconut.html">
-                  <img src="./images/home-coconut.png" class="coconut-home-img" alt="green tea with coconut tea tin">
+                  <img src="./images/home-coconut.png" id="coconut-hover-text" class="coconut-home-img" alt="green tea with coconut tea tin">
                   </a>
+
+
+                  <p id="coconut-learn" style="display: none">Learn More</p>
                </div>
                <div>
                   <a href="earl.html">
-                  <img src="./images/home-earl.png" class="earl-home-img" alt="winter earl gray tea tin">
+                  <img src="./images/home-earl.png" id="earl-hover-text"class="earl-home-img" alt="winter earl gray tea tin">
                   </a>
+
+
+                  <p id="earl-learn" style="display: none">Learn More</p>
                </div>
             </section>
          </div>
@@ -85,6 +96,31 @@
          });
          
          });
+
+
+         var e = document.getElementById('peppermint-hover-text');
+e.onmouseover = function() {
+  document.getElementById('peppermint-learn').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('peppermint-learn').style.display = 'none';
+}
+
+         var e = document.getElementById('coconut-hover-text');
+e.onmouseover = function() {
+  document.getElementById('coconut-learn').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('coconut-learn').style.display = 'none';
+}
+
+         var e = document.getElementById('earl-hover-text');
+e.onmouseover = function() {
+  document.getElementById('earl-learn').style.display = 'block';
+}
+e.onmouseout = function() {
+  document.getElementById('earl-learn').style.display = 'none';
+}
       </script>
    </body>
 </html>
