@@ -1,6 +1,6 @@
 Image Credit:
 
-Page 1:
+Coconut:Image by miguelcruz30 from Pixabay 
 
 Page 2:
 

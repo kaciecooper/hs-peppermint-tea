@@ -49,12 +49,12 @@
 
                </div>
               
-               <div>
+               <div class="coconut-container">
                   <a href="coconut.html">
-                  <img src="./images/home-coconut.png" id="coconut-hover-text" class="coconut-home-img" alt="green tea with coconut tea tin">
+                  <img src="./images/home-coconut.png" id="coconut-hover-text" class="home-coconut" alt="green tea with coconut tea tin">
                   </a>
-
-
+                  <img src='./images/home-coconutt-hover.png'  class="home-coconut-hover">
+               
                   <p id="coconut-learn" style="display: none">Learn More</p>
                </div>
                <div>
@@ -96,6 +96,19 @@
          });
          
          });
+
+         $(function(){
+         $(".home-coconut").on({
+         mouseenter: function(){
+         $(this).attr('src','./images/home-coconut-hover.png');
+         },
+         mouseleave: function(){
+         $(this).attr('src','./images/home-coconut.png');
+         }
+         });
+         
+         });
+
 
 
          var e = document.getElementById('peppermint-hover-text');

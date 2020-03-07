@@ -194,11 +194,11 @@ video {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: 40px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 
-.coconut-home-img,
+
 .earl-home-img {
   width: 80%;
 }
@@ -208,9 +208,15 @@ video {
   width: 100%;
 }
 
-.home-peppermint
 
-.home-peppermint-hover {
+.home-coconut, .home-coconut-hover {
+  width: 115%;
+
+}
+
+
+
+.home-peppermint-hover, .home-coconut-hover {
   display: none;
 }
 
@@ -308,7 +314,8 @@ body {
 
 .wrapper {
   height: 100vh;
-  overflow-x: hidden;
+
+  overflow-x: auto;
   overflow-y: auto;
   perspective: 300px;
 }
@@ -316,8 +323,9 @@ body {
 .parallax_group {
   position: relative;
   height: 300vh;
-  width: 100vw;
+  width: 100%;
   transform-style: preserve-3d;
+  margin:auto;
 }
 
 .parallax_layer {
@@ -364,7 +372,7 @@ body {
 }
 
 .intro-text {
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   background: #fff;
   display: grid;
@@ -398,40 +406,36 @@ body {
   color: #f4badf;
 }
 
+
 .coconut-tea-tin {
   background: url("../images/coconut-tin.png") no-repeat center;
   background-size: cover;
-  transform: translateZ(-900px) scale(1.5);
-  z-index: 3;
+  transform: translateZ(-850px) scale(1.5);
+  z-index: 1;
 }
 
 .coconut1 {
   background: url("../images/coconut1.png") no-repeat center;
-  background-size: contain;
-  transform: translateZ(-850px) scale(1.5);
-  z-index: 2;
+  background-size: cover;
+  transform: translateZ(-950px) scale(2);
+  z-index: -1;
 }
 
 .coconut2 {
   background: url("../images/coconut2.png") no-repeat center;
   background-size: cover;
-  transform: translateZ(-1000px) scale(1.5);
-  z-index: 4;
+  transform: translateZ(-650px) scale(1.5);
+  z-index: 2;
 }
 
 .coconut3 {
   background: url("../images/coconut3.png") no-repeat center;
   background-size: cover;
-  transform: translateZ(-1200px) scale(1.5);
-  z-index: 1;
+  transform: translateZ(-900px) scale(1.5);
+  z-index: -2;
 }
 
-.coconut4 {
-  background: url("../images/coconut4.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-1300px) scale(1.5);
-  z-index: 1;
-}
+
 
 .coco-paragraph {
   border: solid 2px #f4badf;
