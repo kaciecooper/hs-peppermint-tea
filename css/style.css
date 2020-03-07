@@ -1,3 +1,5 @@
+
+
 .home-peppermint-hover {
   display: none;
 }
@@ -236,6 +238,65 @@ video {
 }
 
 
+
+/*////////////////////////TEA INFO PARALLAX//////////////////////////*/
+page2-intro {
+  height: 100vh;
+  background-color: #fff;
+}
+
+.briskness-section-text,
+.body-section-text,
+.aroma-section-text {
+  line-height: 1.5em;
+  padding: 60px;
+  margin: auto;
+  height: 40vh;
+}
+
+.briskness-section,
+.body-section,
+.aroma-section {
+  height: 70vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+.briskness-section-text {
+  background-color: #64e0ba;
+}
+
+.body-section-text {
+  background-color: #59cfde;
+}
+
+.aroma-section-text {
+  background-color: #4dad7a;
+}
+
+.briskness-para,
+.body-para,
+.aroma-para {
+  border: solid 2px #fff;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+}
+
+section {
+  width: 100%;
+  min-height: 100%;
+  float: left;
+  position: relative
+}
+
+
 /*////////////////////////Peppermint//////////////////////////*/
 
 body {
@@ -308,6 +369,7 @@ body {
   background: #fff;
   display: grid;
   grid-template-columns: 60% 40%;
+
 }
 
 .peppermint-paragraph {
