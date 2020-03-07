@@ -25,6 +25,7 @@
       </nav>
       <main>
          <div class='row'>
+
             <div class='product-peppermint'>
                <div class='product_inner'>
                   <a href="#">
@@ -40,13 +41,15 @@
                   <h2>Added to basket</h2>
                </div>
             </div>
+
+
             <div class='product-coconut'>
                <div class='product_inner'>
                   <a href="#">
                   <img src='./images/coconut-shop1.png'  width='300' class="coconut-shop1">
                   </a>
                   <img src='./images/coconut-shop2.png'  width='300' class="coconut-shop2">
-                  <p>Green Tea with Coconut</p>
+                  <p>Green Tea With Coconut</p>
                   <br>
                   <p>Price $5.99</p>
                   <button>Add to basket</button>
@@ -55,18 +58,24 @@
                   <h2>Added to basket</h2>
                </div>
             </div>
-            <div class='product-earl'>
-               <div class='product_inner'>
-                  <img src='./images/gray-shop1.png'  width='300'class="gray-shop-img">
-                  <p>Winter Earl Gray</p>
-                  <br>
-                  <p>Price $5.99</p>
-                  <button>Add to basket</button>
-               </div>
-               <div class='product_overlay'>
-                  <h2>Added to basket</h2>
-               </div>
-            </div>
+
+           <div class='product-earl'>
+                     <div class='product_inner'>
+                        <a href="#">
+                        <img src='./images/gray-shop1.png'  width='300' class="earl-shop1">
+                        </a>
+                        <img src='./images/gray-shop2.png'  width='300' class="earl-shop2">
+                        <p>Winter Earl Gray</p>
+                        <br>
+                        <p>Price $5.99</p>
+                        <button>Add to basket</button>
+                     </div>
+                     <div class='product_overlay'>
+                        <h2>Added to basket</h2>
+                     </div>
+                  </div>
+
+
             <div class='product-all'>
                <div class='product_inner'>
                   <img src='./images/all-tea.png' width='600'>
@@ -143,6 +152,30 @@
          
          });
          
+
+      $(function(){
+         $(".coconut-shop1").on({
+         mouseenter: function(){
+         $(this).attr('src','./images/coconut-shop1.png');
+         },
+         mouseleave: function(){
+         $(this).attr('src','./images/coconut-shop2.png');
+         }
+         });
+         
+         });
+
+         $(function(){
+         $(".earl-shop1").on({
+         mouseenter: function(){
+         $(this).attr('src','./images/gray-shop1.png');
+         },
+         mouseleave: function(){
+         $(this).attr('src','./images/gray-shop2.png');
+         }
+         });
+         
+         });
          
       </script>
    </body>
