@@ -53,15 +53,15 @@
                   <a href="coconut.html">
                   <img src="./images/home-coconut.png" id="coconut-hover-text" class="home-coconut" alt="green tea with coconut tea tin">
                   </a>
-                  <img src='./images/home-coconutt-hover.png'  class="home-coconut-hover">
+                  <img src='./images/home-coconut-hover.png'  class="home-coconut-hover">
                
                   <p id="coconut-learn" style="display: none">Learn More</p>
                </div>
                <div>
                   <a href="earl.html">
-                  <img src="./images/home-earl.png" id="earl-hover-text"class="earl-home-img" alt="winter earl gray tea tin">
+                  <img src="./images/home-earl.png" id="earl-hover-text" class="home-earl" alt="green tea with coconut tea tin">
                   </a>
-
+                  <img src='./images/home-earl-hover.png'  class="home-earl-hover">
 
                   <p id="earl-learn" style="display: none">Learn More</p>
                </div>
@@ -109,7 +109,17 @@
          
          });
 
-
+  $(function(){
+         $(".home-earl").on({
+         mouseenter: function(){
+         $(this).attr('src','./images/home-earl-hover.png');
+         },
+         mouseleave: function(){
+         $(this).attr('src','./images/home-earl.png');
+         }
+         });
+         
+         });
 
          var e = document.getElementById('peppermint-hover-text');
 e.onmouseover = function() {

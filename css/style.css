@@ -1,26 +1,5 @@
 
 
-.home-peppermint-hover {
-  display: none;
-}
-
-#peppermint-learn{
-  text-align:center;
-  color:#64e0ba;
-}
-
-
-#coconut-learn{
-  text-align:center;
-  color:#f4badf;
-}
-
-#earl-learn{
-  text-align:center;
-  color:#91c3e8;
-}
-
-
 
 /*---------------------------------------*/
 
@@ -199,26 +178,49 @@ video {
 }
 
 
-.earl-home-img {
+.home-peppermint,
+.home-peppermint-hover {
   width: 80%;
 }
 
-.home-peppermint,
-.home-peppermint-hover {
-  width: 100%;
+
+.home-coconut, .home-coconut-hover{
+  width: 90%;
+
+}
+.home-earl, .home-earl-hover{
+  width: 125%;
 }
 
 
-.home-coconut, .home-coconut-hover {
-  width: 115%;
-
-}
-
-
-
-.home-peppermint-hover, .home-coconut-hover {
+.home-peppermint-hover, .home-coconut-hover, .home-earl-hover {
   display: none;
 }
+
+
+
+.home-peppermint-hover {
+  display: none;
+}
+
+#peppermint-learn{
+  text-align:center;
+  color:#64e0ba;
+}
+
+
+#coconut-learn{
+  text-align:center;
+  color:#f4badf;
+}
+
+#earl-learn{
+  text-align:center;
+  color:#91c3e8;
+  padding:10px;
+}
+
+
 
 .home-about {
   border-top: solid 1px #000;
@@ -312,9 +314,8 @@ body {
   background-color: #fff;
 }
 
-.wrapper {
+.peppermint-wrapper {
   height: 100vh;
-
   overflow-x: auto;
   overflow-y: auto;
   perspective: 300px;
@@ -398,6 +399,14 @@ body {
 
 /*//////////////////////////Coconut//////////////////////////*/
 
+.coconut-wrapper {
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: 100%;
+  perspective: 300px;
+}
+
+
 .green-coconut {
   width: 100%;
   margin: auto;
@@ -457,33 +466,27 @@ body {
   color: #91c3e8;
 }
 
-.gray-tea-tin {
-  background: url("../images/gray-tin.png") no-repeat center;
+.earl-tin {
+  background: url("../images/earl-tin.png") no-repeat center;
   background-size: cover;
   transform: translateZ(-850px) scale(1.5);
   z-index: 3;
 }
 
-.gray1 {
-  background: url("../images/gray1.png") no-repeat center;
-  background-size: contain;
-  transform: translateZ(-1250px) scale(1.5);
-  z-index: 2;
-}
-
-.gray2 {
-  background: url("../images/gray2.png") no-repeat center;
+.earl1 {
+  background: url("../images/earl-tea1.png") no-repeat center;
   background-size: cover;
-  transform: translateZ(-500px) scale(1.5);
+  transform: translateZ(-1550px) scale(1.5);
   z-index: 4;
 }
 
-.gray3 {
-  background: url("../images/gray3.png") no-repeat center;
+.earl2 {
+  background: url("../images/earl-tea2.png") no-repeat center;
   background-size: cover;
-  transform: translateZ(-300px) scale(1.5);
-  z-index: 1;
+  transform: translateZ(-1500px) scale(1.5);
+  z-index: 3;
 }
+
 
 .gray-paragraph {
   border: solid 2px #dbe3fd;
