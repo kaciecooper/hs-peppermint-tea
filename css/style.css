@@ -455,8 +455,15 @@ body {
   margin-left: 50px;
 }
 
-
 /*//////////////////////////Earl Gray//////////////////////////*/
+
+.earl-wrapper {
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: auto;
+  perspective: 300px;
+}
+
 
 .earl-gray {
   width: 100%;
@@ -476,14 +483,14 @@ body {
 .earl1 {
   background: url("../images/earl-tea1.png") no-repeat center;
   background-size: cover;
-  transform: translateZ(-1550px) scale(1.5);
+  transform: translateZ(-1050px) scale(1.5);
   z-index: 4;
 }
 
 .earl2 {
   background: url("../images/earl-tea2.png") no-repeat center;
   background-size: cover;
-  transform: translateZ(-1500px) scale(1.5);
+  transform: translateZ(-1000px) scale(1.5);
   z-index: 3;
 }
 
