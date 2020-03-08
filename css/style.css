@@ -1,829 +1,623 @@
-
-
-
-/*---------------------------------------*/
-
-
-/*---------------------------------------------*/
-
 body {
-  width: 100%;
+    width: 100%;
 }
-
 h1 {
-  font-family: tenez, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 70px;
-  color: #64e0ba;
+    font-family: tenez, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 70px;
+    color: #64e0ba;
 }
-
 h2 {
-  font-family: 'sporting_grotesqueregular', Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 25px;
-  color: #f3923d;
-  text-align: center;
+    font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    color: #f3923d;
+    text-align: center;
 }
-
 .step-h2 {
-  font-family: 'sporting_grotesqueregular', Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px;
-  color: #000;
-  text-align: left;
+    font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: #000;
+    text-align: left;
 }
-
 h3 {
-  font-family: tenez, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 45px;
-  color: #f3923d;
-  text-align: center;
+    font-family: tenez, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 45px;
+    color: #f3923d;
+    text-align: center;
 }
-
 h6 {
-  font-family: 'sporting_grotesqueregular', Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px;
-  color: #f3923d;
-  text-align: center;
+    font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    color: #f3923d;
+    text-align: center;
 }
-
 p {
-  font-family: 'sporting_grotesqueregular', Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
-
 @font-face {
-  font-family: 'sporting_grotesqueregular';
-  src: url('font/sportinggrotesque-regular-webfont.woff2') format('woff2'), url('font/sportinggrotesque-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'sporting_grotesqueregular';
+    src: url('font/sportinggrotesque-regular-webfont.woff2') format('woff2'), url('font/sportinggrotesque-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-
-
-/*////////////////////////Nav//////////////////////////*/
-
 nav {
-  width: 100%;
-  margin: auto;
-  position: sticky;
+    width: 100%;
+    margin: auto;
+    position: sticky;
 }
-
 ul {
-  display: flex;
-  padding: 10px;
+    display: flex;
+    padding: 10px;
 }
-
 li {
-  padding: 10px;
-  margin: auto;
-  z-index: 99;
+    padding: 10px;
+    margin: auto;
+    z-index: 99;
 }
-
-a,
-.counter {
-  text-decoration: none;
-  color: #000;
-  font-family: 'sporting_grotesqueregular', Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 12px;
+a,.counter {
+    text-decoration: none;
+    color: #000;
+    font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 12px;
 }
-
 a.active {
-  background-color: #4CAF50;
-  color: white;
+    background-color: #4CAF50;
+    color: white;
 }
-
 a:visited {
-  color: #000;
+    color: #000;
 }
-
-
-/*////////////////////////Home//////////////////////////*/
-
 .banner {
-  min-height: 50vh;
+    min-height: 50vh;
 }
-
 .banner h1 {
-  font-size: 200px;
-  color: #000;
-  background-color: #fff;
-  width: 100%;
-  text-align: center;
-  min-height: 50vh;
-  mix-blend-mode: screen;
-  position: absolute;
-  padding-top: 80px;
-  top: 20%;
-  line-height: 1em;
+    font-size: 200px;
+    color: #000;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    min-height: 50vh;
+    mix-blend-mode: screen;
+    position: absolute;
+    padding-top: 80px;
+    top: 20%;
+    line-height: 1em;
 }
-
 .tea-h1 {
-  font-size: 250px;
+    font-size: 250px;
 }
-
 video {
-  width: 800px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 .home-text {
-  width: 100%;
-  margin: auto;
-  display: grid;
-  text-align: center;
-  z-index: 5;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    text-align: center;
+    z-index: 5;
 }
-
 .hs-logo {
-  margin: auto;
+    margin: auto;
 }
-
 .home-para-section {
-  border-bottom: solid 1px #000;
-  text-align: center;
-  line-height: 1.3em;
-  padding: 20px;
-  margin-bottom: 50px;
+    border-bottom: solid 1px #000;
+    text-align: center;
+    line-height: 1.3em;
+    padding: 20px;
+    margin-bottom: 50px;
 }
-
 .tea-section-h1 {
-  color: #ccc;
-  text-align: center;
-  font-size: 40px;
-  width: 100%;
-  margin-top: 60px;
-  padding: 10px;
+    color: #ccc;
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    margin-top: 60px;
+    padding: 10px;
 }
-
 .home-tea-images {
-  width: 100%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 10px;
-  margin-bottom: 20px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    margin-bottom: 20px;
 }
-
-
-.home-peppermint,
-.home-peppermint-hover {
-  width: 80%;
+.home-peppermint,.home-peppermint-hover {
+    width: 80%;
 }
-
-
-.home-coconut, .home-coconut-hover{
-  width: 90%;
-
+.home-coconut, .home-coconut-hover {
+    width: 90%;
 }
-.home-earl, .home-earl-hover{
-  width: 125%;
+.home-earl, .home-earl-hover {
+    width: 125%;
 }
-
-
 .home-peppermint-hover, .home-coconut-hover, .home-earl-hover {
-  display: none;
+    display: none;
 }
-
-
-
 .home-peppermint-hover {
-  display: none;
+    display: none;
 }
-
-#peppermint-learn{
-  text-align:center;
-  color:#64e0ba;
+#peppermint-learn {
+    text-align: center;
+    color: #64e0ba;
 }
-
-
-#coconut-learn{
-  text-align:center;
-  color:#f4badf;
+#coconut-learn {
+    text-align: center;
+    color: #f4badf;
 }
-
-#earl-learn{
-  text-align:center;
-  color:#91c3e8;
-  padding:10px;
+#earl-learn {
+    text-align: center;
+    color: #91c3e8;
+    padding: 10px;
 }
-
-
-
 .home-about {
-  border-top: solid 1px #000;
-  padding: 40px;
-  width: 100%;
-  height: 40vh;
-  /*  background: url("../images/about-img.png") no-repeat center;*/
+    border-top: solid 1px #000;
+    padding: 40px;
+    width: 100%;
+    height: 40vh;
 }
-
 .about-h1 {
-  color: #ccc;
-  font-size: 40px;
-  padding: 30px;
-  text-align: center;
+    color: #ccc;
+    font-size: 40px;
+    padding: 30px;
+    text-align: center;
 }
-
 .about-para {
-  width: 50%;
-  padding-left: 25%;
-  padding-bottom: 70px;
-  line-height: 1.5em;
-  font-size: 14px;
+    width: 50%;
+    padding-left: 25%;
+    padding-bottom: 70px;
+    line-height: 1.5em;
+    font-size: 14px;
 }
-
-
-
-/*////////////////////////TEA INFO PARALLAX//////////////////////////*/
 page2-intro {
-  height: 100vh;
-  background-color: #fff;
+    height: 100vh;
+    background-color: #fff;
 }
-
-.briskness-section-text,
-.body-section-text,
-.aroma-section-text {
-  line-height: 1.5em;
-  padding: 60px;
-  margin: auto;
-  height: 40vh;
+.briskness-section-text,.body-section-text,.aroma-section-text {
+    line-height: 1.5em;
+    padding: 60px;
+    margin: auto;
+    height: 40vh;
 }
-
-.briskness-section,
-.body-section,
-.aroma-section {
-  height: 70vh;
-  width: 100%;
-  background-color: #fff;
+.briskness-section,.body-section,.aroma-section {
+    height: 70vh;
+    width: 100%;
+    background-color: #fff;
 }
-
 .briskness-section-text {
-  background-color: #64e0ba;
+    background-color: #64e0ba;
 }
-
 .body-section-text {
-  background-color: #59cfde;
+    background-color: #59cfde;
 }
-
 .aroma-section-text {
-  background-color: #4dad7a;
+    background-color: #4dad7a;
 }
-
-.briskness-para,
-.body-para,
-.aroma-para {
-  border: solid 2px #fff;
-  width: 100%;
-  padding: 10px;
-  margin: auto;
+.briskness-para,.body-para,.aroma-para {
+    border: solid 2px #fff;
+    width: 100%;
+    padding: 10px;
+    margin: auto;
 }
-
 header {
-  width: 100%;
-  height: 100vh;
-  background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
 }
-
 section {
-  width: 100%;
-  min-height: 100%;
-  float: left;
-  position: relative
-}
-
-
-/*////////////////////////Peppermint//////////////////////////*/
-
+    width: 100%;
+    min-height: 100%;
+    float: left;
+    position: relative}
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fff;
 }
-
 .peppermint-wrapper {
-  height: 100vh;
-  overflow-x: auto;
-  overflow-y: auto;
-  perspective: 300px;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    perspective: 300px;
 }
-
 .parallax_group {
-  position: relative;
-  height: 300vh;
-  width: 100%;
-  transform-style: preserve-3d;
-  margin:auto;
+    position: relative;
+    height: 300vh;
+    width: 100%;
+    transform-style: preserve-3d;
+    margin: auto;
 }
-
 .parallax_layer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
-
 .tea-tin {
-  background: url("../images/peppermint.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-850px) scale(1.5);
-  z-index: 3;
+    background: url("../images/peppermint.png") no-repeat center;
+    background-size: cover;
+    transform: translateZ(-850px) scale(1.5);
+    z-index: 3;
 }
-
 .mint1 {
-  background: url("../images/mint1.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-750px) scale(1.5);
-  z-index: 2;
+    background: url("../images/mint1.png") no-repeat center;
+    background-size: cover;
+    transform: translateZ(-750px) scale(1.5);
+    z-index: 2;
 }
-
 .mint2 {
-  background: url("../images/mint2.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-650px) scale(1.5);
-  z-index: 4;
+    background: url("../images/mint2.png") no-repeat center;
+    background-size: cover;
+    transform: translateZ(-650px) scale(1.5);
+    z-index: 4;
 }
-
 .mint3 {
-  background: url("../images/mint3.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-1000px) scale(1.5);
-  z-index: 1;
+    background: url("../images/mint3.png") no-repeat center;
+    background-size: cover;
+    transform: translateZ(-1000px) scale(1.5);
+    z-index: 1;
 }
-
 .peppermint-herbal {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  margin-top: 160px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 160px;
 }
-
 .intro-text {
-  height: 90vh;
-  width: 100%;
-  background: #fff;
-  display: grid;
-  grid-template-columns: 60% 40%;
-
+    height: 90vh;
+    width: 100%;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
-
 .peppermint-paragraph {
-  border: solid 2px #dbe3fd;
-  width: 40%;
-  line-height: 1.5em;
-  padding: 30px;
-  margin-top: 200px;
-  margin-left: 50px;
+    border: solid 2px #dbe3fd;
+    width: 40%;
+    line-height: 1.5em;
+    padding: 30px;
+    margin-top: 200px;
+    margin-left: 50px;
 }
-
 .peppermint-lifestyle-img {
-  width: 100%;
-  padding: 0;
-  margin: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
-
-
-/*//////////////////////////Coconut//////////////////////////*/
-
 .coconut-wrapper {
-  height: 100vh;
-  overflow-x: auto;
-  overflow-y: 100%;
-  perspective: 300px;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: 100%;
+    perspective: 300px;
 }
-
-
 .green-coconut {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  margin-top: 160px;
-  color: #f4badf;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 160px;
+    color: #f4badf;
 }
-
-
 .coconut-tea-tin {
-  background: url("../images/coconut-tin.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-850px) scale(1.5);
-  z-index: 1;
+    background: url("../images/coconut-tin.png") no-repeat center;
+    background-size: cover;
+    transform: translateZ(-850px) scale(1.5);
+    z-index: 1;
 }
-
 .coconut1 {
-  background: url("../images/coconut1.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-950px) scale(2);
-  z-index: -1;
+    background: url("../images/coconut1.png") no-repeat center;
+    background-size: cover;
+    transform: translateZ(-950px) scale(2);
+    z-index: -1;
 }
-
 .coconut2 {
-  background: url("../images/coconut2.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-650px) scale(1.5);
-  z-index: 2;
+    background: url("../images/coconut2.png") no-repeat center;
+    background-size: cover;
+    transform: translateZ(-650px) scale(1.5);
+    z-index: 2;
 }
-
 .coconut3 {
-  background: url("../images/coconut3.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-900px) scale(1.5);
-  z-index: -2;
+    background: url("../images/coconut3.png") no-repeat center;
+    background-size: cover;
+    transform: translateZ(-900px) scale(1.5);
+    z-index: -2;
 }
-
-
-
 .coco-paragraph {
-  border: solid 2px #f4badf;
-  width: 40%;
-  line-height: 1.5em;
-  padding: 30px;
-  margin-top: 200px;
-  margin-left: 50px;
+    border: solid 2px #f4badf;
+    width: 40%;
+    line-height: 1.5em;
+    padding: 30px;
+    margin-top: 200px;
+    margin-left: 50px;
 }
-
-/*//////////////////////////Earl Gray//////////////////////////*/
-
 .earl-wrapper {
-  height: 100vh;
-  overflow-x: auto;
-  overflow-y: auto;
-  perspective: 300px;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    perspective: 300px;
 }
-
-
 .earl-gray {
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  margin-top: 160px;
-  color: #91c3e8;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 160px;
+    color: #91c3e8;
 }
-
 .earl-tin {
-  background: url("../images/earl-tin.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-850px) scale(1.5);
-  z-index: 3;
+    background: url("../images/earl-tin.png") no-repeat center;
+    background-size: cover;
+    transform: translateZ(-850px) scale(1.5);
+    z-index: 3;
 }
-
 .earl1 {
-  background: url("../images/earl-tea1.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-1050px) scale(1.5);
-  z-index: 4;
+    background: url("../images/earl-tea1.png") no-repeat center;
+    background-size: cover;
+    transform: translateZ(-1050px) scale(1.5);
+    z-index: 4;
 }
-
 .earl2 {
-  background: url("../images/earl-tea2.png") no-repeat center;
-  background-size: cover;
-  transform: translateZ(-1000px) scale(1.5);
-  z-index: 3;
+    background: url("../images/earl-tea2.png") no-repeat center;
+    background-size: cover;
+    transform: translateZ(-1000px) scale(1.5);
+    z-index: 3;
 }
-
-
 .gray-paragraph {
-  border: solid 2px #dbe3fd;
-  width: 40%;
-  line-height: 1.5em;
-  padding: 30px;
-  margin-top: 200px;
-  margin-left: 50px;
+    border: solid 2px #dbe3fd;
+    width: 40%;
+    line-height: 1.5em;
+    padding: 30px;
+    margin-top: 200px;
+    margin-left: 50px;
 }
-
-
-/*//////////////////////////FIND YOUR BEST TEA//////////////////////////*/
-
-
-/*------Slider---------*/
-
 input[type=range] {
-  -webkit-appearance: none;
-  padding: 50px;
-  width: 80%;
-
+    -webkit-appearance: none;
+    padding: 50px;
+    width: 80%;
 }
-
 input[type=range]:focus {
-  outline: none;
-
+    outline: none;
 }
-
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 10px;
-  cursor: pointer;
-  background: #dbe3fd;
-  border-radius: 1.3px;
-
+input[type=range]:: -webkit-slider-runnable-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: #dbe3fd;
+    border-radius: 1.3px;
 }
-
-input[type=range]::-webkit-slider-thumb {
-  height: 20px;
-  width: 20px;
-  border-radius: 15px;
-  background: #f3923d;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -5px;
-
+input[type=range]:: -webkit-slider-thumb {
+    height: 20px;
+    width: 20px;
+    border-radius: 15px;
+    background: #f3923d;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
 }
-
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #dbe3fd;
-
+input[type=range]:focus:: -webkit-slider-runnable-track {
+    background: #dbe3fd;
 }
-
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 10px;
-  cursor: pointer;
-  background: #dbe3fd;
-  border-radius: 1.3px;
-
+input[type=range]:: -moz-range-track {
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+    background: #dbe3fd;
+    border-radius: 1.3px;
 }
-
-input[type=range]::-moz-range-thumb {
-  height: 25px;
-  width: 25px;
-  border-radius: 15px;
-  background: #f3923d;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -5px;
-
+input[type=range]:: -moz-range-thumb {
+    height: 25px;
+    width: 25px;
+    border-radius: 15px;
+    background: #f3923d;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -5px;
 }
-
-.range-slider{
-  border-bottom: solid 2px #f3923d;
+.range-slider {
+    border-bottom: solid 2px #f3923d;
 }
-
-
-.brew-header{
-  height: 55vh;
-  background: url("../images/tea-brew.jpg") no-repeat center;
-  background-size: cover;
-
+.brew-header {
+    height: 55vh;
+    background: url("../images/tea-brew.jpg") no-repeat center;
+    background-size: cover;
 }
-
 .h1-brew {
-  color: #f3923d;
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  padding: 30px;
+    color: #f3923d;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
 }
-
 .brew-para {
-  width: 100%;
-  padding: 40px;
-  margin:40px;
-  font-size:30px;
+    width: 100%;
+    padding: 40px;
+    margin: 40px;
+    font-size: 30px;
 }
-
-.briskness,
-.body,
-.aroma {
-  height: 20vh;
-  display: grid;
-  grid-template-columns: 10% 50% 30% 10%;
-  padding: 40px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+.briskness,.body,.aroma {
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 10% 50% 30% 10%;
+    padding: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-
-.briskness-text,
-.body-text,
-.aroma-text {
-  border-bottom: solid 2px #f3923d;
-  border-left: solid 2px #f3923d;
-  padding: 10px;
-
+.briskness-text,.body-text,.aroma-text {
+    border-bottom: solid 2px #f3923d;
+    border-left: solid 2px #f3923d;
+    padding: 10px;
 }
-
 .brew-para {
-  width: 70%;
-  font-size: 14px;
-  margin: auto;
-  line-height:1.5em;
+    width: 70%;
+    font-size: 14px;
+    margin: auto;
+    line-height: 1.5em;
 }
-
-#peppermint-reveal,
-#coconut-reveal,
-#earl-reveal {
-  margin: auto;
-  width: 100%;
-  padding: 10px;
-  display: none;
+#peppermint-reveal,#coconut-reveal,#earl-reveal {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    display: none;
 }
-
-.green-coconut,
-.peppermint-herbal,
-.earl-gray {
-  margin-top: 30px;
+.green-coconut,.peppermint-herbal,.earl-gray {
+    margin-top: 30px;
 }
-
-#tea_reveal1,
-#tea_reveal2,
-#tea_reveal3 {
-  display: block;
-  margin: auto;
+#tea_reveal1,#tea_reveal2,#tea_reveal3 {
+    display: block;
+    margin: auto;
 }
-
 .tea-button-section {
-  width: 100%;
-  height: 10vh;
-  margin: auto;
+    width: 100%;
+    height: 10vh;
+    margin: auto;
 }
-
 .tea-button {
-  padding: 15px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 25px;
-  font-family: tenez, sans-serif;
-  font-weight: 900;
-  font-style: normal;
-  color: #f3923d;
-  text-align: center;
-  margin: auto;
-  display: block;
-  border: none;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: tenez, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    color: #f3923d;
+    text-align: center;
+    margin: auto;
+    display: block;
+    border: none;
 }
-
-
-/*-----------------------SHOP ---------------------*/
-
 header {
-  width: 100%;
-  /*display: flex;
-  justify-content: flex-end;
-  flex-flow: row wrap;*/
+    width: 100%;
 }
-
 header ul {
-  padding: 1.2em 0 0.5em;
+    padding: 1.2em 0 0.5em;
 }
-
 header span {
-  padding: 0 0 0 0.5em;
+    padding: 0 0 0 0.5em;
 }
-
-header span,
-header i {
-  color: #2b2d42;
+header span,header i {
+    color: #2b2d42;
 }
-
-header i:nth-of-type(2) {
-  cursor: pointer;
+header i: nth-of-type(2) {
+    cursor: pointer;
 }
-
 .row {
-  width: 70%;
-  justify-content: flex;
-  display: flex;
-  flex-flow: row wrap;
-  margin: auto;
+    width: 70%;
+    justify-content: flex;
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
 }
-
-.product,
-.product-peppermint,
-.product-coconut,
-.product-earl,
-.product-all {
-  width: 15em;
-  height: auto;
-  padding: 2em;
-  margin: 1em;
-  overflow: hidden;
-  position: relative;
-  flex: auto;
+.product,.product-peppermint,.product-coconut,.product-earl,.product-all {
+    width: 15em;
+    height: auto;
+    padding: 2em;
+    margin: 1em;
+    overflow: hidden;
+    position: relative;
+    flex: auto;
 }
-
 .product-peppermint {
-  background-color: #64e0ba;
+    background-color: #64e0ba;
 }
-
 .product-coconut {
-  background-color: #f4badf;
+    background-color: #f4badf;
 }
-
 .product-earl {
-  background-color: #91c3e8;
+    background-color: #91c3e8;
 }
-
 .product-all {
-  background-color: #ccc
+    background-color: #ccc}
+.product img,.product-peppermint img,.product-coconut img,.product-earl img,.product-all img {
+    max-width: 100%;
+    height: auto !important;
+    text-align: center;
 }
-
-.product img,
-.product-peppermint img,
-.product-coconut img,
-.product-earl img,
-.product-all img {
-  max-width: 100%;
-  height: auto !important;
-  text-align: center;
-}
-
 .product_inner {
-  display: flex;
-  align-items: center;
-  flex-flow: column wrap;
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
 }
-
 .product_inner p {
-  color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 0.9);
 }
-
 .product_inner button {
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  color: #fff;
-  padding: 1em 3em;
-  margin: 1em 0 0 0;
-  background: none;
-  cursor: pointer;
-  transition: background ease-in 0.25s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    padding: 1em 3em;
+    margin: 1em 0 0 0;
+    background: none;
+    cursor: pointer;
+    transition: background ease-in 0.25s;
 }
-
 .product_inner button:hover {
-  background: rgba(255, 255, 255, 1);
-  color: #2b2d42;
+    background: rgba(255, 255, 255, 1);
+    color: #2b2d42;
 }
-
 .product_inner button:before {
-  font-family: 'sporting_grotesqueregular', Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-  color: #fff;
-  position: absolute;
-  font-size: 1.5em;
-  margin: 0 -1.5em;
+    font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    color: #fff;
+    position: absolute;
+    font-size: 1.5em;
+    margin: 0 -1.5em;
 }
-
 .product_inner button:hover:before {
-  color: #2b2d42;
+    color: #2b2d42;
 }
-
 .product_overlay {
-  background: rgba(255, 255, 255, 0.9);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  transform: translateY(-500px);
-  opacity: 0;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(-500px);
+    opacity: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
-
 .product_overlay h2 {
-  color: rgba(43, 45, 66, 0.7);
-  font-size: 1.2em;
-  margin: 1em 0;
+    color: rgba(43, 45, 66, 0.7);
+    font-size: 1.2em;
+    margin: 1em 0;
 }
-
 .product_overlay i {
-  color: rgba(43, 45, 66, 0.7);
-  font-size: 1.5em;
+    color: rgba(43, 45, 66, 0.7);
+    font-size: 1.5em;
 }
-
 .peppermint-shop2, .coconut-shop2, .earl-shop2 {
-  display: none;
-} 
-
-/*//////////////////////////FOOTER//////////////////////////*/
-
-footer {
-  width: 100%;
-  margin: auto;
-  color: #ccc;
-  margin: auto;
-  width: 100%;
-  text-align: center;
-  font-size: 14px;
+    display: none;
 }
-
-
-/*////////////////////////////////////////////////////*/
-
-@media only screen and (min-width:768px) {}
-
-@media only screen and (min-width:1224px) {}
+ footer {
+    width: 100%;
+    margin: auto;
+    color: #ccc;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+@media only screen and (min-width: 768px) {
+}
+@media only screen and (min-width: 1224px) {
+}
