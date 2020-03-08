@@ -1,3 +1,10 @@
+
+
+
+
+/*--------------------------------------------
+                    HomePage
+--------------------------------------------*/
 body {
     width: 100%;
 }
@@ -139,6 +146,7 @@ video {
     padding: 10px;
     margin-bottom: 20px;
 }
+
 .home-peppermint,.home-peppermint-hover {
     width: 80%;
 }
@@ -186,6 +194,11 @@ video {
     line-height: 1.5em;
     font-size: 14px;
 }
+
+
+/*--------------------------------------------
+                    BREW
+--------------------------------------------*/
 page2-intro {
     height: 100vh;
     background-color: #fff;
@@ -232,6 +245,11 @@ body {
     height: 100%;
     background-color: #fff;
 }
+
+
+/*--------------------------------------------
+                   PEPPERMINT
+--------------------------------------------*/
 .peppermint-wrapper {
     height: 100vh;
     overflow-x: auto;
@@ -302,6 +320,11 @@ body {
     padding: 0;
     margin: 0;
 }
+
+
+/*--------------------------------------------
+                  COCONUT
+--------------------------------------------*/
 .coconut-wrapper {
     height: 100vh;
     overflow-x: auto;
@@ -347,6 +370,10 @@ body {
     margin-top: 200px;
     margin-left: 50px;
 }
+
+/*--------------------------------------------
+                  WINTER EARL GRAY
+--------------------------------------------*/
 .earl-wrapper {
     height: 100vh;
     overflow-x: auto;
@@ -386,6 +413,12 @@ body {
     margin-top: 200px;
     margin-left: 50px;
 }
+
+
+
+/*--------------------------------------------
+               BREW
+--------------------------------------------*/
 input[type=range] {
     -webkit-appearance: none;
     padding: 50px;
@@ -432,11 +465,7 @@ input[type=range]:: -moz-range-thumb {
 .range-slider {
     border-bottom: solid 2px #f3923d;
 }
-.brew-header {
-    height: 55vh;
-    background: url("../images/tea-brew.jpg") no-repeat center;
-    background-size: cover;
-}
+
 .h1-brew {
     color: #f3923d;
     width: 100%;
@@ -501,6 +530,204 @@ input[type=range]:: -moz-range-thumb {
     display: block;
     border: none;
 }
+/*--------------------------------------------
+                 BREW2.0
+--------------------------------------------*/
+.brew-header {
+    height: 55vh;
+    background: url("../images/brew-header.jpg") no-repeat center;
+    background-size: cover;
+}
+
+
+
+/* This is for the parallax */
+
+.peppermint-level {
+  height: 300vh;
+  display: flex;
+}
+
+.peppermint-title{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 0 !important;
+  background-color: #64e0ba;
+  color: #B6B6B6;
+}
+
+.peppermint-levels {
+  width: 50%;
+}
+
+.peppermint-levels div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+
+.peppermint-levels div>p {
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.peppermint-levels div:nth-child(1) {
+  background-color: #dbe3fd;
+    border-top:solid 2px #fff;
+  border-bottom:solid 2px #fff;
+  color: #090A0A;
+}
+
+.peppermint-levels div:nth-child(2) {
+  background-color: #dbe3fd;
+    border-top:solid 2px #fff;
+  border-bottom:solid 2px #fff;
+  color: #090A0A;
+}
+
+.peppermint-levels div:nth-child(3) {
+  background-color: #dbe3fd;
+    border-top:solid 2px #fff;
+  border-bottom:solid 2px #fff;
+  color: #090A0A;
+}
+
+/*--------------------*/
+
+.coconut-level {
+  height: 300vh;
+  display: flex;
+}
+
+.coconut-title{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 0 !important;
+  background-color: #f4badf;
+  border-top:solid 2px #fff;
+  border-bottom:solid 2px #fff;
+  color: #B6B6B6;
+}
+
+.coconut-levels {
+  width: 50%;
+}
+
+.coconut-levels div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+
+.coconut-levels div>p {
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.coconut-levels div:nth-child(1) {
+  background-color:#dbe3fd;
+    border-top:solid 2px #fff;
+  border-bottom:solid 2px #fff;
+  color: #090A0A;
+}
+
+.coconut-levels div:nth-child(2) {
+  background-color: #dbe3fd;
+    border-top:solid 2px #fff;
+  border-bottom:solid 2px #fff;
+  color: #090A0A;
+}
+
+.coconut-levels div:nth-child(3) {
+  background-color: #dbe3fd;
+    border-top:solid 2px #fff;
+  border-bottom:solid 2px #fff;
+  color: #090A0A;
+}
+
+
+/*-------------------*/
+.earl-level {
+  height: 300vh;
+  display: flex;
+}
+
+.earl-title{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  margin: 0 !important;
+  background-color: #91c3e8;
+  border-top:solid 2px #fff;
+  border-bottom:solid 2px #fff;
+  color: #B6B6B6;
+}
+
+.earl-levels {
+  width: 50%;
+}
+
+.earl-levels div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+
+.earl-levels div>p {
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.earl-levels div:nth-child(1) {
+  background-color:  #dbe3fd;
+  border-top:solid 2px #fff;
+  border-bottom:solid 2px #fff;
+  color: #090A0A;
+}
+
+.earl-levels div:nth-child(2) {
+  background-color: #dbe3fd;
+    border-top:solid 2px #fff;
+  border-bottom:solid 2px #fff;
+  color: #090A0A;
+}
+
+.earl-levels div:nth-child(3) {
+  background-color:  #dbe3fd;
+    border-top:solid 2px #fff;
+  border-bottom:solid 2px #fff;
+  color: #090A0A;
+}
+
+
+
+/*--------------------------------------------
+                    SHOP
+--------------------------------------------*/
+
 header {
     width: 100%;
 }
@@ -608,6 +835,10 @@ header i: nth-of-type(2) {
 .peppermint-shop2, .coconut-shop2, .earl-shop2 {
     display: none;
 }
+
+/*--------------------------------------------
+                   Footer
+--------------------------------------------*/
  footer {
     width: 100%;
     margin: auto;
@@ -617,6 +848,10 @@ header i: nth-of-type(2) {
     text-align: center;
     font-size: 14px;
 }
+
+/*--------------------------------------------
+                  MEDIA QUERIES
+--------------------------------------------*/
 @media only screen and (min-width: 768px) {
 }
 @media only screen and (min-width: 1224px) {
