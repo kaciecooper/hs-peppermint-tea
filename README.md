@@ -1,18 +1,15 @@
 Image Credit:
 
+
+Green Tea With Coconut Images: Harney and Sons Website
+Peppermint Herbal Images: Harney and Sons Website
+Winter White Earl Gray Images: Harney and Sons Website
+
 Coconut:Image by miguelcruz30 from Pixabay 
 
-Page 2:
 
-Brew:
-Briskness Image:
+Brew Header:
 Photo by freestocks.org from Pexels
-
-
-Body Image:
-
-
-Aroma Image:
 
 
 

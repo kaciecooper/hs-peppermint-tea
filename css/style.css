@@ -39,6 +39,15 @@ h3 {
     color: #f3923d;
     text-align: center;
 }
+
+h4{
+    font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: #fff;
+    text-align: left;
+}
 h6 {
     font-family: 'sporting_grotesqueregular', Arial, sans-serif;
     font-weight: normal;
@@ -84,6 +93,11 @@ a.active {
     background-color: #4CAF50;
     color: white;
 }
+
+a :hover {
+  color: #ccc;
+}
+
 a:visited {
     color: #000;
 }
@@ -165,31 +179,46 @@ video {
 #peppermint-learn {
     text-align: center;
     color: #64e0ba;
+    font-size:20px;
 }
 #coconut-learn {
     text-align: center;
     color: #f4badf;
+    font-size:20px;
+
 }
 #earl-learn {
     text-align: center;
     color: #91c3e8;
     padding: 10px;
+    font-size:20px;
+
 }
 .home-about {
     border-top: solid 1px #000;
-    padding: 40px;
+    padding-top:30px;
     width: 100%;
     height: 40vh;
+    display:grid;
+    grid-template-columns:30% 70%;
+     
 }
+
 .about-h1 {
-    color: #ccc;
+    color: #000;
     font-size: 40px;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
 }
+
+.about-img1{
+    background: url("../images/about-img1.jpg") no-repeat center;
+    background-size: contain;
+}
+
 .about-para {
-    width: 50%;
-    padding-left: 25%;
+    padding:20px;
+
     padding-bottom: 70px;
     line-height: 1.5em;
     font-size: 14px;
@@ -301,14 +330,15 @@ body {
     margin-top: 160px;
 }
 .intro-text {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     background: #fff;
     display: grid;
     grid-template-columns: 60% 40%;
+
 }
 .peppermint-paragraph {
-    border: solid 2px #dbe3fd;
+    border: solid 2px #64e0ba;
     width: 40%;
     line-height: 1.5em;
     padding: 30px;
@@ -367,8 +397,18 @@ body {
     width: 40%;
     line-height: 1.5em;
     padding: 30px;
-    margin-top: 200px;
+    margin-top: 300px;
     margin-left: 50px;
+}
+
+
+.coconut-lifestyle-img {
+   padding-top:30px;
+}
+
+.learn-link{
+    padding:60px;
+   
 }
 
 /*--------------------------------------------
@@ -537,10 +577,12 @@ input[type=range]:: -moz-range-thumb {
     height: 55vh;
     background: url("../images/brew-header.jpg") no-repeat center;
     background-size: cover;
+    margin-bottom:100px;
 }
 
-
-
+.levels-section{
+    margin-top:40px;
+}
 /* This is for the parallax */
 
 .peppermint-level {
@@ -551,13 +593,43 @@ input[type=range]:: -moz-range-thumb {
 .peppermint-title{
   width: 50%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
+  padding:40px;
   align-items: center;
   font-size: 30px;
   margin: 0 !important;
-  background-color: #64e0ba;
-  color: #B6B6B6;
+  color:  #000;
+}
+
+.peppermint-h2{
+    color:#64e0ba;
+    font-family: tenez, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.brew-peppermint-hover, .brew-coconut-hover, .brew-earl-hover {
+    width: 100%;
+    margin:auto;
+}
+
+.peppermint-details-div{
+    border:solid 2px #64e0ba;
+}
+
+.peppermint-details-h4{
+    color:#64e0ba;
+   
+}
+
+.peppermint-purchase-h4{
+ font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: #64e0ba;
+    text-align: left;   
+    padding:100px;
 }
 
 .peppermint-levels {
@@ -565,36 +637,39 @@ input[type=range]:: -moz-range-thumb {
 }
 
 .peppermint-levels div {
-  height: 100vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  padding:40px;
   align-items: center;
-  color: black;
+  color: #000;
 }
 
 .peppermint-levels div>p {
   width: 80%;
-  font-size: 18px;
-  line-height: 30px;
+  font-size: 16px;
+  padding:30px;
+  text-align:center;
+  line-height: 1.2em;
+
 }
 
 .peppermint-levels div:nth-child(1) {
-  background-color: #dbe3fd;
+  background-color: #64e0ba;
     border-top:solid 2px #fff;
   border-bottom:solid 2px #fff;
   color: #090A0A;
 }
 
 .peppermint-levels div:nth-child(2) {
-  background-color: #dbe3fd;
+ background-color: #64e0ba;
     border-top:solid 2px #fff;
   border-bottom:solid 2px #fff;
   color: #090A0A;
 }
 
 .peppermint-levels div:nth-child(3) {
-  background-color: #dbe3fd;
+ background-color: #64e0ba;
     border-top:solid 2px #fff;
   border-bottom:solid 2px #fff;
   color: #090A0A;
@@ -609,53 +684,80 @@ input[type=range]:: -moz-range-thumb {
 
 .coconut-title{
   width: 50%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+  height: 80vh;
+  padding:40px;
   align-items: center;
   font-size: 30px;
   margin: 0 !important;
-  background-color: #f4badf;
   border-top:solid 2px #fff;
   border-bottom:solid 2px #fff;
   color: #B6B6B6;
 }
+
+.coconut-h2{
+    color:#f4badf;
+    font-family: tenez, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.coconut-details-div{
+    border:solid 2px #f4badf;
+}
+.coconut-details-h4{
+    color:#f4badf;
+   
+}
+
+.coconut-purchase-h4{
+ font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: #f4badf;
+    text-align: left;   
+    padding:100px;
+}
+
 
 .coconut-levels {
   width: 50%;
 }
 
 .coconut-levels div {
-  height: 100vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  padding:40px;
   align-items: center;
-  color: black;
+  color: #000;
 }
 
 .coconut-levels div>p {
-  width: 80%;
-  font-size: 18px;
-  line-height: 30px;
+    width: 80%;
+  font-size: 16px;
+  padding:30px;
+  text-align:center;
+  line-height: 1.2em;
 }
 
 .coconut-levels div:nth-child(1) {
-  background-color:#dbe3fd;
+ background-color: #f4badf;
     border-top:solid 2px #fff;
   border-bottom:solid 2px #fff;
   color: #090A0A;
 }
 
 .coconut-levels div:nth-child(2) {
-  background-color: #dbe3fd;
+  background-color: #f4badf;
     border-top:solid 2px #fff;
   border-bottom:solid 2px #fff;
   color: #090A0A;
 }
 
 .coconut-levels div:nth-child(3) {
-  background-color: #dbe3fd;
+  background-color: #f4badf;
     border-top:solid 2px #fff;
   border-bottom:solid 2px #fff;
   color: #090A0A;
@@ -671,56 +773,85 @@ input[type=range]:: -moz-range-thumb {
 .earl-title{
   width: 50%;
   height: 100vh;
-  display: flex;
-  justify-content: center;
+  padding:40px;
   align-items: center;
   font-size: 30px;
   margin: 0 !important;
-  background-color: #91c3e8;
   border-top:solid 2px #fff;
   border-bottom:solid 2px #fff;
   color: #B6B6B6;
 }
+
+.earl-h2{
+    color:#91c3e8;
+    font-family: tenez, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.earl-details-div{
+    border:solid 2px #91c3e8;
+}
+.earl-details-h4{
+    color:#91c3e8;
+   
+}
+
+.earl-purchase-h4{
+ font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    color: #91c3e8;
+    text-align: left;   
+    padding:100px;
+}
+
+
 
 .earl-levels {
   width: 50%;
 }
 
 .earl-levels div {
-  height: 100vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  padding:40px;
   align-items: center;
-  color: black;
+  color: #000;
 }
 
 .earl-levels div>p {
-  width: 80%;
-  font-size: 18px;
-  line-height: 30px;
+   width: 80%;
+  font-size: 16px;
+  padding:30px;
+  text-align:center;
+  line-height: 1.2em;
 }
 
 .earl-levels div:nth-child(1) {
-  background-color:  #dbe3fd;
+  background-color: #91c3e8;
   border-top:solid 2px #fff;
   border-bottom:solid 2px #fff;
   color: #090A0A;
 }
 
 .earl-levels div:nth-child(2) {
-  background-color: #dbe3fd;
+  background-color: #91c3e8;
     border-top:solid 2px #fff;
   border-bottom:solid 2px #fff;
   color: #090A0A;
 }
 
 .earl-levels div:nth-child(3) {
-  background-color:  #dbe3fd;
+  background-color: #91c3e8;
     border-top:solid 2px #fff;
   border-bottom:solid 2px #fff;
   color: #090A0A;
 }
+
 
 
 
