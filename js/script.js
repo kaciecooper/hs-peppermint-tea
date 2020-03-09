@@ -102,7 +102,7 @@ $(function () {
     }
 
 
-    document.querySelector('scroll-container').scrollLeft = 100 % ;
+    document.querySelector('scroll-container').scrollLeft = 100%;
 
 
     var cwidth = document.getElementById("width");
