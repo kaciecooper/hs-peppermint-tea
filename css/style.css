@@ -103,6 +103,7 @@ a:visited {
 }
 .banner {
     min-height: 50vh;
+    position: relative;
 }
 .banner h1 {
     font-size: 200px;
@@ -114,11 +115,23 @@ a:visited {
     mix-blend-mode: screen;
     position: absolute;
     padding-top: 80px;
-    top: 20%;
+    top: 15%;
     line-height: 1em;
 }
 .tea-h1 {
     font-size: 250px;
+}
+
+
+
+.mobile-h1{
+    font-family: tenez, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 150px;
+    color: #000;
+    text-align:center;
+    display:none;
 }
 video {
     width: 800px;
@@ -984,7 +997,97 @@ header i: nth-of-type(2) {
 /*--------------------------------------------
                   MEDIA QUERIES
 --------------------------------------------*/
-@media only screen and (min-width: 768px) {
+
+
+@media only screen and (max-width: 768px) {
+
+    .mobile-h1{
+        display:block;
+    }
+
+.banner{display:none;}
+
+video {
+    display: none;
 }
-@media only screen and (min-width: 1224px) {
+
+p{
+    font-size:14px;
 }
+    
+a{
+    font-size:12px;
+}
+
+.about-h1{
+    font-size:30px;
+    text-align:center;
+}
+
+.home-tea-images {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.home-peppermint, .home-coconut{
+    width:60%;
+    margin:auto;
+    padding:40px;
+}
+
+.home-earl{
+    width:80%;
+    margin:auto;
+}
+
+
+.peppermint-wrapper, .coconut-wrapper, .earl-wrapper {
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: auto;
+    perspective: 200px;
+}
+.parallax_group {
+    position: relative;
+    height: 150vh;
+    width: 100%;
+    transform-style: preserve-3d;
+    margin: auto;
+}
+
+.peppermint-herbal, .green-coconut, .earl-gray{
+    font-size:40px;
+    padding-top:100px;
+}
+
+.intro-text {
+    grid-template-columns:1fr;
+
+}
+
+
+
+
+
+@media only screen and (min-width:1024px) {
+
+
+  
+
+}
+
+
+@media only screen and (min-width:1200px) {
+  .mobile-h1{
+        display:none;
+    }
+
+
+ }
+
+
+
