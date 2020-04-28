@@ -5,9 +5,11 @@
 /*--------------------------------------------
                     HomePage
 --------------------------------------------*/
-body {
+.home-body {
     width: 100%;
+    background-color: #ffff;
 }
+
 h1 {
     font-family: tenez, sans-serif;
     font-weight: 900;
@@ -89,34 +91,41 @@ a,.counter {
     font-style: normal;
     font-size: 12px;
 }
-a.active {
-    background-color: #4CAF50;
-    color: white;
+a:active {
+    background-color: #2595b8;
+    color: #fff;
 }
 
-a :hover {
-  color: #ccc;
+a:hover {
+  color: #fff;
+  background-color:#2595b8;
 }
 
 a:visited {
     color: #000;
 }
+
+
 .banner {
-    min-height: 50vh;
+    min-height: 60vh;
     position: relative;
+    margin-top:60px; 
+    margin-bottom:2px; 
+    
 }
 .banner h1 {
-    font-size: 200px;
+    font-size: 210px;
     color: #000;
     background-color: #fff;
     width: 100%;
     text-align: center;
     min-height: 50vh;
-    mix-blend-mode: screen;
+    mix-blend-mode:screen;
+    opacity: 100%;
     position: absolute;
-    padding-top: 80px;
-    top: 15%;
+    top: 1%;
     line-height: 1em;
+   
 }
 .tea-h1 {
     font-size: 250px;
@@ -134,7 +143,9 @@ a:visited {
     display:none;
 }
 video {
-    width: 800px;
+    padding:30px;
+    width: 750px;
+    height:400px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -151,27 +162,28 @@ video {
     margin: auto;
 }
 .home-para-section {
-    border-bottom: solid 1px #000;
+
     text-align: center;
-    line-height: 1.3em;
-    padding: 20px;
-    margin-bottom: 50px;
+    line-height: 1.4em;
+    font-size:18px;
+    color:#000;
+    margin-top:0;
+    margin-bottom:50px;
 }
-.tea-section-h1 {
-    color: #ccc;
-    text-align: center;
-    font-size: 40px;
-    width: 100%;
-    margin-top: 60px;
-    padding: 10px;
+
+.story-text{
+    font-size:18px;
+    text-decoration: underline wavy #2595b8;
 }
+
+
+
 .home-tea-images {
-    width: 100%;
-    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    border:solid 2px purple;
+    height:100vh;
 }
 
 .home-peppermint,.home-peppermint-hover {
@@ -181,39 +193,47 @@ video {
     width: 90%;
 }
 .home-earl, .home-earl-hover {
-    width: 125%;
+    width: 90%;
 }
 .home-peppermint-hover, .home-coconut-hover, .home-earl-hover {
     display: none;
 }
 .home-peppermint-hover {
     display: none;
-}
+
+/*
+
 #peppermint-learn {
-    text-align: center;
+ 
     color: #64e0ba;
-    font-size:20px;
+    font-size:18px;
+    text-align:center;
 }
 #coconut-learn {
-    text-align: center;
+  
     color: #f4badf;
-    font-size:20px;
+    font-size:18px;
 
 }
 #earl-learn {
-    text-align: center;
+  
     color: #91c3e8;
-    padding: 10px;
-    font-size:20px;
-
+    font-size:18px;
 }
+
+ <p id="earl-learn" style="display: none">Winter Earl Gray</p>
+ <p id="coconut-learn" style="display: none">Coconut With Green Tea</p>
+  <p id="peppermint-learn" style="display: none">Peppermint Herbal</p>
+
+*/
+
+
 .home-about {
-    border-top: solid 1px #000;
     padding-top:30px;
     width: 100%;
-    height: 40vh;
+    height: 140vh;
     display:grid;
-    grid-template-columns:30% 70%;
+    grid-template-columns:30% 40% 30%;
      
 }
 
@@ -221,7 +241,7 @@ video {
     color: #000;
     font-size: 40px;
     padding: 20px;
-    text-align: center;
+    margin-top:50%;
 }
 
 .about-img1{
