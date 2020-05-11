@@ -636,10 +636,6 @@ input[type=range]:: -moz-range-thumb {
                  BREW2.0
 --------------------------------------------*/
 .brew-header {
-    height: 55vh;
-    background: url("../images/brew-header.jpg") no-repeat center;
-    background-size: cover;
-    margin-bottom:100px;
 }
 
 .levels-section{
