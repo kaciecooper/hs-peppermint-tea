@@ -119,8 +119,8 @@ a:active {
 }
 
 a:hover {
-  color: #fff;
-  background-color:#2595b8;
+  color: #000;
+  /*background-color:#2595b8;*/
 }
 
 a:visited {
@@ -201,14 +201,18 @@ video {
 
 
 .home-tea-images {
+    text-align: center;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 50px;
+    grid-template-columns: 1fr 1fr;
     border:solid 2px purple;
     height:100vh;
 }
 
-.home-peppermint,.home-peppermint-hover {
+.home-peppermint,.home-peppermint-hover, .home-coconut, .home-coconut-hover, .home-earl, .home-earl-hover, .home-cinnamon{
+    width: 60%;
+}
+/*
+.home-peppermint,.home-peppermint-hover, {
     width: 80%;
 }
 .home-coconut, .home-coconut-hover {
@@ -217,13 +221,12 @@ video {
 .home-earl, .home-earl-hover {
     width: 90%;
 }
-.home-peppermint-hover, .home-coconut-hover, .home-earl-hover {
+
+*/
+
+.home-peppermint-hover, .home-coconut-hover, .home-earl-hover, .home-cinnamon-hover {
     display: none;
 }
-.home-peppermint-hover {
-    display: none;
-}
-/*
 
 #peppermint-learn {
  
@@ -232,17 +235,27 @@ video {
     text-align:center;
 }
 #coconut-learn {
-  
     color: #f4badf;
     font-size:18px;
+    text-align:center;
 
 }
+
+
 #earl-learn {
-  
     color: #91c3e8;
     font-size:18px;
+    text-align:center;
 }
 
+#cinnamon-learn {
+  
+    color:#F28444;
+    font-size:18px;
+    text-align:center;
+}
+
+/*
  <p id="earl-learn" style="display: none">Winter Earl Gray</p>
  <p id="coconut-learn" style="display: none">Coconut With Green Tea</p>
   <p id="peppermint-learn" style="display: none">Peppermint Herbal</p>

@@ -303,9 +303,13 @@
     </div>
             
         </section>
+    
+            <div>
+                  <h2 class="our-teas"> Our Teas </h2>
 
-
+            </div>
             <section class="home-tea-images">
+                  
                 <div class="peppermint-container">
                     <a href="peppermint.html">
                         <img src='./images/home-peppermint.png' id="peppermint-hover-text" class="home-peppermint" alt="canister of peppermint herbal tea">
@@ -313,7 +317,7 @@
                     </a>
                     <img src='./images/home-peppermint-hover.png' class="home-peppermint-hover" alt="hover image of mint leaves of peppermint herbal tea">
 
-                   
+                 <p id="peppermint-learn" style="display: none">Peppermint Herbal</p>
 
                 </div>
 
@@ -323,45 +327,29 @@
                     </a>
                     <img src='./images/home-coconut-hover.png' class="home-coconut-hover" alt="hover image of coconut pieces">
 
-                    
+                    <p id="coconut-learn" style="display: none">Green Tea With Coconut</p>
                 </div>
+
+
+              <div>
+                    <a href="earl.html">
+                        <img src='./images/home-cinnamon.png'  class="home-cinnamon" alt="cinnamon tea tin">
+                    </a>
+                     <img src='./images/home-cinnamon-hover.png' class="home-cinnamon-hover" alt="hover image of loose leaf tea">
+                  
+                   <p id="cinnamon-learn" style="display: none">Hot Cinnamon Sunset</p>
+
+                   
+                </div>
+
+
                 <div>
                     <a href="earl.html">
-                        <img src='./images/home-coconut-hover.png'  class="home-earl" alt="green tea with coconut tea tin">
+                        <img src='./images/home-earl-hover.png'  class="home-earl" alt="earl gray tea tin">
                     </a>
-                    <img src='./images/home-coconut-hover.png' class="home-earl-hover" alt="hover image of loose leaf tea">
+                    <img src='./images/home-earl-hover.png' class="home-earl-hover" alt="hover image of loose leaf tea">
 
-                   
-                </div>
-                      <div class="peppermint-container">
-                    <a href="peppermint.html">
-                        <img src='./images/home-peppermint.png' id="peppermint-hover-text" class="home-peppermint" alt="canister of peppermint herbal tea">
-
-                    </a>
-                    <img src='./images/home-peppermint-hover.png' class="home-peppermint-hover" alt="hover image of mint leaves of peppermint herbal tea">
-
-                   
-
-                </div>
-
-                <div class="coconut-container">
-                    <a href="coconut.html">
-                        <img src='./images/home-coconut-hover.png' id="coconut-hover-text" class="home-coconut" alt="green tea with coconut tea tin">
-                    </a>
-                    <img src='./images/home-coconut-hover.png' class="home-coconut-hover" alt="hover image of coconut pieces">
-
-                    
-                </div>
-                <div>
-                    <a href="earl.html">
-                        <img src='./images/home-coconut-hover.png'  class="home-earl" alt="green tea with coconut tea tin">
-                    </a>
-                    <img src='./images/home-coconut-hover.png' class="home-earl-hover" alt="hover image of loose leaf tea">
-
-                   
-                </div>
-
-
+                 <p id="earl-learn" style="display: none">Earl Gray</p>
 
 
 
@@ -434,6 +422,18 @@
 
         });
 
+             $(function() {
+            $(".home-cinnamon").on({
+                mouseenter: function() {
+                    $(this).attr('src', './images/home-cinnamon-hover.png');
+                },
+                mouseleave: function() {
+                    $(this).attr('src', './images/home-cinnamon.png');
+                }
+            });
+
+        });
+
         var e = document.getElementById('peppermint-hover-text');
         e.onmouseover = function() {
             document.getElementById('peppermint-learn').style.display = 'block';
@@ -457,6 +457,15 @@
         e.onmouseout = function() {
             document.getElementById('earl-learn').style.display = 'none';
         }
+
+         var e = document.getElementById('cinnamon-hover-text');
+        e.onmouseover = function() {
+            document.getElementById('cinnamon-learn').style.display = 'block';
+        }
+        e.onmouseout = function() {
+            document.getElementById('cinnamon-learn').style.display = 'none';
+        }
+
     </script>
 <script>
     // init controller
