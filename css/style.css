@@ -1,32 +1,31 @@
-
-
     #reveal1 {
-        opacity: 0;
-        -webkit-transform: scale(0.9);
-             -moz-transform: scale(0.9);
-                -ms-transform: scale(0.9);
-                 -o-transform: scale(0.9);
-                        transform: scale(0.9);
-        -webkit-transition: all 1s ease-in-out;
-             -moz-transition: all 1s ease-in-out;
-                -ms-transition: all 1s ease-in-out;
-                 -o-transition: all 1s ease-in-out;
-                        transition: all 1s ease-in-out;
-    }
-    #reveal1.visible {
-        opacity: 1;
-        -webkit-transform: none;
-             -moz-transform: none;
-                -ms-transform: none;
-                 -o-transform: none;
-                        transform: none;
-    }
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
 
+#reveal1.visible {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
 
 
 /*--------------------------------------------
                     HomePage
 --------------------------------------------*/
+
 .home-body {
     width: 100%;
     background-color: #ffff;
@@ -39,6 +38,7 @@ h1 {
     font-size: 70px;
     color: #64e0ba;
 }
+
 h2 {
     font-family: 'sporting_grotesqueregular', Arial, sans-serif;
     font-weight: normal;
@@ -47,6 +47,7 @@ h2 {
     color: #f3923d;
     text-align: center;
 }
+
 .step-h2 {
     font-family: 'sporting_grotesqueregular', Arial, sans-serif;
     font-weight: normal;
@@ -55,6 +56,7 @@ h2 {
     color: #000;
     text-align: left;
 }
+
 h3 {
     font-family: tenez, sans-serif;
     font-weight: 900;
@@ -64,7 +66,7 @@ h3 {
     text-align: center;
 }
 
-h4{
+h4 {
     font-family: 'sporting_grotesqueregular', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
@@ -72,6 +74,7 @@ h4{
     color: #fff;
     text-align: left;
 }
+
 h6 {
     font-family: 'sporting_grotesqueregular', Arial, sans-serif;
     font-weight: normal;
@@ -80,32 +83,39 @@ h6 {
     color: #f3923d;
     text-align: center;
 }
+
 p {
     font-family: 'sporting_grotesqueregular', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'sporting_grotesqueregular';
     src: url('font/sportinggrotesque-regular-webfont.woff2') format('woff2'), url('font/sportinggrotesque-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 nav {
     width: 100%;
     margin: auto;
     position: sticky;
 }
+
 ul {
     display: flex;
     padding: 10px;
 }
+
 li {
     padding: 10px;
     margin: auto;
     z-index: 99;
 }
-a,.counter {
+
+a,
+.counter {
     text-decoration: none;
     color: #000;
     font-family: 'sporting_grotesqueregular', Arial, sans-serif;
@@ -113,28 +123,28 @@ a,.counter {
     font-style: normal;
     font-size: 12px;
 }
+
 a:active {
     background-color: #2595b8;
     color: #fff;
 }
 
 a:hover {
-  color: #000;
-  /*background-color:#2595b8;*/
+    color: #000;
+    /*background-color:#2595b8;*/
 }
 
 a:visited {
     color: #000;
 }
 
-
 .banner {
     min-height: 60vh;
     position: relative;
-    margin-top:60px; 
-    margin-bottom:2px; 
-    
+    margin-top: 60px;
+    margin-bottom: 2px;
 }
+
 .banner h1 {
     font-size: 210px;
     color: #000;
@@ -142,37 +152,37 @@ a:visited {
     width: 100%;
     text-align: center;
     min-height: 50vh;
-    mix-blend-mode:screen;
+    mix-blend-mode: screen;
     opacity: 100%;
     position: absolute;
     top: 1%;
     line-height: 1em;
-   
 }
+
 .tea-h1 {
     font-size: 250px;
 }
 
-
-
-.mobile-h1{
+.mobile-h1 {
     font-family: tenez, sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 150px;
     color: #000;
-    text-align:center;
-    display:none;
+    text-align: center;
+    display: none;
 }
+
 video {
-    padding:30px;
+    padding: 30px;
     width: 750px;
-    height:400px;
+    height: 400px;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .home-text {
     width: 100%;
     margin: auto;
@@ -180,37 +190,45 @@ video {
     text-align: center;
     z-index: 5;
 }
+
 .hs-logo {
     margin: auto;
 }
-.home-para-section {
 
+.home-para-section {
     text-align: center;
     line-height: 1.4em;
-    font-size:18px;
-    color:#000;
-    margin-top:0;
-    margin-bottom:50px;
+    font-size: 18px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
-.story-text{
-    font-size:18px;
+.story-text {
+    font-size: 18px;
     text-decoration: underline wavy #2595b8;
 }
-
-
 
 .home-tea-images {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border:solid 2px purple;
-    height:100vh;
+    border: solid 2px purple;
+    height: 100vh;
+   
 }
 
-.home-peppermint,.home-peppermint-hover, .home-coconut, .home-coconut-hover, .home-earl, .home-earl-hover, .home-cinnamon{
+.home-peppermint,
+.home-peppermint-hover,
+.home-coconut,
+.home-coconut-hover,
+.home-earl,
+.home-earl-hover,
+.home-cinnamon {
     width: 60%;
 }
+
+
 /*
 .home-peppermint,.home-peppermint-hover, {
     width: 80%;
@@ -224,36 +242,37 @@ video {
 
 */
 
-.home-peppermint-hover, .home-coconut-hover, .home-earl-hover, .home-cinnamon-hover {
+.home-peppermint-hover,
+.home-coconut-hover,
+.home-earl-hover,
+.home-cinnamon-hover {
     display: none;
 }
 
 #peppermint-learn {
- 
     color: #64e0ba;
-    font-size:18px;
-    text-align:center;
+    font-size: 18px;
+    text-align: center;
 }
+
 #coconut-learn {
     color: #f4badf;
-    font-size:18px;
-    text-align:center;
-
+    font-size: 18px;
+    text-align: center;
 }
-
 
 #earl-learn {
     color: #91c3e8;
-    font-size:18px;
-    text-align:center;
+    font-size: 18px;
+    text-align: center;
 }
 
 #cinnamon-learn {
-  
-    color:#F28444;
-    font-size:18px;
-    text-align:center;
+    color: #F28444;
+    font-size: 18px;
+    text-align: center;
 }
+
 
 /*
  <p id="earl-learn" style="display: none">Winter Earl Gray</p>
@@ -262,86 +281,99 @@ video {
 
 */
 
-
 .home-about {
-    padding-top:150px;
+    padding-top: 150px;
     width: 100%;
     height: 140vh;
-    display:grid;
-    grid-template-columns:30% 40% 30%;
-
-     
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
 }
 
 .about-h1 {
     color: #000;
     font-size: 40px;
     padding: 20px;
-    margin-top:30%;
+    margin-top: 30%;
 }
 
-.about-img1{
+.about-img1 {
     background: url("../images/about-img1.jpg") no-repeat center;
     background-size: contain;
 }
 
 .about-para {
-    padding:20px;
-
+    padding: 20px;
     padding-bottom: 70px;
     line-height: 1.5em;
     font-size: 14px;
 }
 
-.tea-spoons-img{
-    margin:auto;
-    width:100%;
+.tea-spoons-img {
+    margin: auto;
+    width: 100%;
 }
 
 
 /*--------------------------------------------
                     BREW
 --------------------------------------------*/
+
 page2-intro {
     height: 100vh;
     background-color: #fff;
 }
-.briskness-section-text,.body-section-text,.aroma-section-text {
+
+.briskness-section-text,
+.body-section-text,
+.aroma-section-text {
     line-height: 1.5em;
     padding: 60px;
     margin: auto;
     height: 40vh;
 }
-.briskness-section,.body-section,.aroma-section {
+
+.briskness-section,
+.body-section,
+.aroma-section {
     height: 70vh;
     width: 100%;
     background-color: #fff;
 }
+
 .briskness-section-text {
     background-color: #64e0ba;
 }
+
 .body-section-text {
     background-color: #59cfde;
 }
+
 .aroma-section-text {
     background-color: #4dad7a;
 }
-.briskness-para,.body-para,.aroma-para {
+
+.briskness-para,
+.body-para,
+.aroma-para {
     border: solid 2px #fff;
     width: 100%;
     padding: 10px;
     margin: auto;
 }
+
 header {
     width: 100%;
     height: 100vh;
     background-color: #fff;
 }
+
 section {
     width: 100%;
     min-height: 100%;
     float: left;
-    position: relative}
+    position: relative
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -353,12 +385,14 @@ body {
 /*--------------------------------------------
                    PEPPERMINT
 --------------------------------------------*/
+
 .peppermint-wrapper {
     height: 100vh;
     overflow-x: auto;
     overflow-y: auto;
     perspective: 300px;
 }
+
 .parallax_group {
     position: relative;
     height: 300vh;
@@ -366,6 +400,7 @@ body {
     transform-style: preserve-3d;
     margin: auto;
 }
+
 .parallax_layer {
     position: absolute;
     top: 0;
@@ -373,44 +408,50 @@ body {
     right: 0;
     bottom: 0;
 }
+
 .tea-tin {
     background: url("../images/peppermint.png") no-repeat center;
     background-size: cover;
     transform: translateZ(-850px) scale(1.5);
     z-index: 3;
 }
+
 .mint1 {
     background: url("../images/mint1.png") no-repeat center;
     background-size: cover;
     transform: translateZ(-750px) scale(1.5);
     z-index: 2;
 }
+
 .mint2 {
     background: url("../images/mint2.png") no-repeat center;
     background-size: cover;
     transform: translateZ(-650px) scale(1.5);
     z-index: 4;
 }
+
 .mint3 {
     background: url("../images/mint3.png") no-repeat center;
     background-size: cover;
     transform: translateZ(-1000px) scale(1.5);
     z-index: 1;
 }
+
 .peppermint-herbal {
     width: 100%;
     margin: auto;
     text-align: center;
     margin-top: 160px;
 }
+
 .intro-text {
     height: 100vh;
     width: 100%;
     background: #fff;
     display: grid;
     grid-template-columns: 60% 40%;
-
 }
+
 .peppermint-paragraph {
     border: solid 2px #64e0ba;
     width: 40%;
@@ -419,6 +460,7 @@ body {
     margin-top: 200px;
     margin-left: 50px;
 }
+
 .peppermint-lifestyle-img {
     width: 100%;
     padding: 0;
@@ -429,12 +471,14 @@ body {
 /*--------------------------------------------
                   COCONUT
 --------------------------------------------*/
+
 .coconut-wrapper {
     height: 100vh;
     overflow-x: auto;
     overflow-y: 100%;
     perspective: 300px;
 }
+
 .green-coconut {
     width: 100%;
     margin: auto;
@@ -442,30 +486,35 @@ body {
     margin-top: 160px;
     color: #f4badf;
 }
+
 .coconut-tea-tin {
     background: url("../images/coconut-tin.png") no-repeat center;
     background-size: cover;
     transform: translateZ(-850px) scale(1.5);
     z-index: 1;
 }
+
 .coconut1 {
     background: url("../images/coconut1.png") no-repeat center;
     background-size: cover;
     transform: translateZ(-950px) scale(2);
     z-index: -1;
 }
+
 .coconut2 {
     background: url("../images/coconut2.png") no-repeat center;
     background-size: cover;
     transform: translateZ(-650px) scale(1.5);
     z-index: 2;
 }
+
 .coconut3 {
     background: url("../images/coconut3.png") no-repeat center;
     background-size: cover;
     transform: translateZ(-900px) scale(1.5);
     z-index: -2;
 }
+
 .coco-paragraph {
     border: solid 2px #f4badf;
     width: 40%;
@@ -475,26 +524,24 @@ body {
     margin-left: 50px;
 }
 
-
 .coconut-lifestyle-img {
-   padding-top:30px;
+    padding-top: 30px;
 }
 
-.learn-link{
-    padding:60px;
-    font-size:18px;
-   
-}
+
+
 
 /*--------------------------------------------
                   WINTER EARL GRAY
 --------------------------------------------*/
+
 .earl-wrapper {
     height: 100vh;
     overflow-x: auto;
     overflow-y: auto;
     perspective: 300px;
 }
+
 .earl-gray {
     width: 100%;
     margin: auto;
@@ -502,24 +549,28 @@ body {
     margin-top: 160px;
     color: #91c3e8;
 }
+
 .earl-tin {
     background: url("../images/earl-tin.png") no-repeat center;
     background-size: cover;
     transform: translateZ(-850px) scale(1.5);
     z-index: 3;
 }
+
 .earl1 {
     background: url("../images/earl-tea1.png") no-repeat center;
     background-size: cover;
     transform: translateZ(-1050px) scale(1.5);
     z-index: 4;
 }
+
 .earl2 {
     background: url("../images/earl-tea2.png") no-repeat center;
     background-size: cover;
     transform: translateZ(-1000px) scale(1.5);
     z-index: 3;
 }
+
 .gray-paragraph {
     border: solid 2px #dbe3fd;
     width: 40%;
@@ -530,18 +581,20 @@ body {
 }
 
 
-
 /*--------------------------------------------
                BREW
 --------------------------------------------*/
+
 input[type=range] {
     -webkit-appearance: none;
     padding: 50px;
     width: 80%;
 }
+
 input[type=range]:focus {
     outline: none;
 }
+
 input[type=range]:: -webkit-slider-runnable-track {
     width: 100%;
     height: 10px;
@@ -549,6 +602,7 @@ input[type=range]:: -webkit-slider-runnable-track {
     background: #dbe3fd;
     border-radius: 1.3px;
 }
+
 input[type=range]:: -webkit-slider-thumb {
     height: 20px;
     width: 20px;
@@ -558,9 +612,11 @@ input[type=range]:: -webkit-slider-thumb {
     -webkit-appearance: none;
     margin-top: -5px;
 }
+
 input[type=range]:focus:: -webkit-slider-runnable-track {
     background: #dbe3fd;
 }
+
 input[type=range]:: -moz-range-track {
     width: 100%;
     height: 10px;
@@ -568,6 +624,7 @@ input[type=range]:: -moz-range-track {
     background: #dbe3fd;
     border-radius: 1.3px;
 }
+
 input[type=range]:: -moz-range-thumb {
     height: 25px;
     width: 25px;
@@ -577,6 +634,7 @@ input[type=range]:: -moz-range-thumb {
     -webkit-appearance: none;
     margin-top: -5px;
 }
+
 .range-slider {
     border-bottom: solid 2px #f3923d;
 }
@@ -588,13 +646,17 @@ input[type=range]:: -moz-range-thumb {
     text-align: center;
     padding: 30px;
 }
+
 .brew-para {
     width: 100%;
     padding: 40px;
     margin: 40px;
     font-size: 30px;
 }
-.briskness,.body,.aroma {
+
+.briskness,
+.body,
+.aroma {
     height: 20vh;
     display: grid;
     grid-template-columns: 10% 50% 30% 10%;
@@ -602,35 +664,50 @@ input[type=range]:: -moz-range-thumb {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.briskness-text,.body-text,.aroma-text {
+
+.briskness-text,
+.body-text,
+.aroma-text {
     border-bottom: solid 2px #f3923d;
     border-left: solid 2px #f3923d;
     padding: 10px;
 }
+
 .brew-para {
     width: 70%;
     font-size: 14px;
     margin: auto;
     line-height: 1.5em;
 }
-#peppermint-reveal,#coconut-reveal,#earl-reveal {
+
+#peppermint-reveal,
+#coconut-reveal,
+#earl-reveal {
     margin: auto;
     width: 100%;
     padding: 10px;
     display: none;
 }
-.green-coconut,.peppermint-herbal,.earl-gray {
+
+.green-coconut,
+.peppermint-herbal,
+.earl-gray {
     margin-top: 30px;
 }
-#tea_reveal1,#tea_reveal2,#tea_reveal3 {
+
+#tea_reveal1,
+#tea_reveal2,
+#tea_reveal3 {
     display: block;
     margin: auto;
 }
+
 .tea-button-section {
     width: 100%;
     height: 10vh;
     margin: auto;
 }
+
 .tea-button {
     padding: 15px;
     text-align: center;
@@ -645,289 +722,291 @@ input[type=range]:: -moz-range-thumb {
     display: block;
     border: none;
 }
+
+
 /*--------------------------------------------
                  BREW2.0
 --------------------------------------------*/
+
 .brew-header {
     height: 55vh;
     background: url("../images/tea-spin.mp4") no-repeat center;
     background-size: cover;
-    margin-bottom:100px;
+    margin-bottom: 100px;
 }
 
-.levels-section{
-    margin-top:40px;
+.levels-section {
+    margin-top: 40px;
 }
+
+
 /* This is for the parallax */
 
 .peppermint-level {
-  height: 300vh;
-  display: flex;
+    height: 300vh;
+    display: flex;
 }
 
-.peppermint-title{
-  width: 50%;
-  height: 100vh;
-  padding:40px;
-  align-items: center;
-  font-size: 30px;
-  margin: 0 !important;
-  color:  #000;
+.peppermint-title {
+    width: 50%;
+    height: 100vh;
+    padding: 40px;
+    align-items: center;
+    font-size: 30px;
+    margin: 0 !important;
+    color: #000;
 }
 
-.peppermint-h2{
-    color:#64e0ba;
+.peppermint-h2 {
+    color: #64e0ba;
     font-family: tenez, sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 30px;
 }
 
-.brew-peppermint-hover, .brew-coconut-hover, .brew-earl-hover {
+.brew-peppermint-hover,
+.brew-coconut-hover,
+.brew-earl-hover {
     width: 100%;
-    margin:auto;
+    margin: auto;
 }
 
-.peppermint-details-div{
-    border:solid 2px #64e0ba;
+.peppermint-details-div {
+    border: solid 2px #64e0ba;
 }
 
-.peppermint-details-h4{
-    color:#64e0ba;
-   
+.peppermint-details-h4 {
+    color: #64e0ba;
 }
 
-.peppermint-purchase-h4{
- font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+.peppermint-purchase-h4 {
+    font-family: 'sporting_grotesqueregular', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
     color: #64e0ba;
-    text-align: left;   
-    padding:100px;
+    text-align: left;
+    padding: 100px;
 }
 
 .peppermint-levels {
-  width: 50%;
+    width: 50%;
 }
 
 .peppermint-levels div {
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  padding:40px;
-  align-items: center;
-  color: #000;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    color: #000;
 }
 
 .peppermint-levels div>p {
-  width: 80%;
-  font-size: 16px;
-  padding:30px;
-  text-align:center;
-  line-height: 1.2em;
-
+    width: 80%;
+    font-size: 16px;
+    padding: 30px;
+    text-align: center;
+    line-height: 1.2em;
 }
 
 .peppermint-levels div:nth-child(1) {
-  background-color: #64e0ba;
-    border-top:solid 2px #fff;
-  border-bottom:solid 2px #fff;
-  color: #090A0A;
+    background-color: #64e0ba;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    color: #090A0A;
 }
 
 .peppermint-levels div:nth-child(2) {
- background-color: #64e0ba;
-    border-top:solid 2px #fff;
-  border-bottom:solid 2px #fff;
-  color: #090A0A;
+    background-color: #64e0ba;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    color: #090A0A;
 }
 
 .peppermint-levels div:nth-child(3) {
- background-color: #64e0ba;
-    border-top:solid 2px #fff;
-  border-bottom:solid 2px #fff;
-  color: #090A0A;
+    background-color: #64e0ba;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    color: #090A0A;
 }
+
 
 /*--------------------*/
 
 .coconut-level {
-  height: 300vh;
-  display: flex;
+    height: 300vh;
+    display: flex;
 }
 
-.coconut-title{
-  width: 50%;
-  height: 80vh;
-  padding:40px;
-  align-items: center;
-  font-size: 30px;
-  margin: 0 !important;
-  border-top:solid 2px #fff;
-  border-bottom:solid 2px #fff;
-  color: #B6B6B6;
+.coconut-title {
+    width: 50%;
+    height: 80vh;
+    padding: 40px;
+    align-items: center;
+    font-size: 30px;
+    margin: 0 !important;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    color: #B6B6B6;
 }
 
-.coconut-h2{
-    color:#f4badf;
+.coconut-h2 {
+    color: #f4badf;
     font-family: tenez, sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 30px;
 }
 
-.coconut-details-div{
-    border:solid 2px #f4badf;
-}
-.coconut-details-h4{
-    color:#f4badf;
-   
+.coconut-details-div {
+    border: solid 2px #f4badf;
 }
 
-.coconut-purchase-h4{
- font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+.coconut-details-h4 {
+    color: #f4badf;
+}
+
+.coconut-purchase-h4 {
+    font-family: 'sporting_grotesqueregular', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
     color: #f4badf;
-    text-align: left;   
-    padding:100px;
+    text-align: left;
+    padding: 100px;
 }
 
-
 .coconut-levels {
-  width: 50%;
+    width: 50%;
 }
 
 .coconut-levels div {
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  padding:40px;
-  align-items: center;
-  color: #000;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    color: #000;
 }
 
 .coconut-levels div>p {
     width: 80%;
-  font-size: 16px;
-  padding:30px;
-  text-align:center;
-  line-height: 1.2em;
+    font-size: 16px;
+    padding: 30px;
+    text-align: center;
+    line-height: 1.2em;
 }
 
 .coconut-levels div:nth-child(1) {
- background-color: #f4badf;
-    border-top:solid 2px #fff;
-  border-bottom:solid 2px #fff;
-  color: #090A0A;
+    background-color: #f4badf;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    color: #090A0A;
 }
 
 .coconut-levels div:nth-child(2) {
-  background-color: #f4badf;
-    border-top:solid 2px #fff;
-  border-bottom:solid 2px #fff;
-  color: #090A0A;
+    background-color: #f4badf;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    color: #090A0A;
 }
 
 .coconut-levels div:nth-child(3) {
-  background-color: #f4badf;
-    border-top:solid 2px #fff;
-  border-bottom:solid 2px #fff;
-  color: #090A0A;
+    background-color: #f4badf;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    color: #090A0A;
 }
 
 
 /*-------------------*/
+
 .earl-level {
-  height: 300vh;
-  display: flex;
+    height: 300vh;
+    display: flex;
 }
 
-.earl-title{
-  width: 50%;
-  height: 100vh;
-  padding:40px;
-  align-items: center;
-  font-size: 30px;
-  margin: 0 !important;
-  border-top:solid 2px #fff;
-  border-bottom:solid 2px #fff;
-  color: #B6B6B6;
+.earl-title {
+    width: 50%;
+    height: 100vh;
+    padding: 40px;
+    align-items: center;
+    font-size: 30px;
+    margin: 0 !important;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    color: #B6B6B6;
 }
 
-.earl-h2{
-    color:#91c3e8;
+.earl-h2 {
+    color: #91c3e8;
     font-family: tenez, sans-serif;
     font-weight: 900;
     font-style: normal;
     font-size: 30px;
 }
 
-.earl-details-div{
-    border:solid 2px #91c3e8;
-}
-.earl-details-h4{
-    color:#91c3e8;
-   
+.earl-details-div {
+    border: solid 2px #91c3e8;
 }
 
-.earl-purchase-h4{
- font-family: 'sporting_grotesqueregular', Arial, sans-serif;
+.earl-details-h4 {
+    color: #91c3e8;
+}
+
+.earl-purchase-h4 {
+    font-family: 'sporting_grotesqueregular', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     font-size: 20px;
     color: #91c3e8;
-    text-align: left;   
-    padding:100px;
+    text-align: left;
+    padding: 100px;
 }
 
-
-
 .earl-levels {
-  width: 50%;
+    width: 50%;
 }
 
 .earl-levels div {
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  padding:40px;
-  align-items: center;
-  color: #000;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    align-items: center;
+    color: #000;
 }
 
 .earl-levels div>p {
-   width: 80%;
-  font-size: 16px;
-  padding:30px;
-  text-align:center;
-  line-height: 1.2em;
+    width: 80%;
+    font-size: 16px;
+    padding: 30px;
+    text-align: center;
+    line-height: 1.2em;
 }
 
 .earl-levels div:nth-child(1) {
-  background-color: #91c3e8;
-  border-top:solid 2px #fff;
-  border-bottom:solid 2px #fff;
-  color: #090A0A;
+    background-color: #91c3e8;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    color: #090A0A;
 }
 
 .earl-levels div:nth-child(2) {
-  background-color: #91c3e8;
-    border-top:solid 2px #fff;
-  border-bottom:solid 2px #fff;
-  color: #090A0A;
+    background-color: #91c3e8;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    color: #090A0A;
 }
 
 .earl-levels div:nth-child(3) {
-  background-color: #91c3e8;
-    border-top:solid 2px #fff;
-  border-bottom:solid 2px #fff;
-  color: #090A0A;
+    background-color: #91c3e8;
+    border-top: solid 2px #fff;
+    border-bottom: solid 2px #fff;
+    color: #090A0A;
 }
-
-
 
 
 /*--------------------------------------------
@@ -937,18 +1016,24 @@ input[type=range]:: -moz-range-thumb {
 header {
     width: 100%;
 }
+
 header ul {
     padding: 1.2em 0 0.5em;
 }
+
 header span {
     padding: 0 0 0 0.5em;
 }
-header span,header i {
+
+header span,
+header i {
     color: #2b2d42;
 }
+
 header i: nth-of-type(2) {
     cursor: pointer;
 }
+
 .row {
     width: 70%;
     justify-content: flex;
@@ -956,7 +1041,12 @@ header i: nth-of-type(2) {
     flex-flow: row wrap;
     margin: auto;
 }
-.product,.product-peppermint,.product-coconut,.product-earl,.product-all {
+
+.product,
+.product-peppermint,
+.product-coconut,
+.product-earl,
+.product-all {
     width: 15em;
     height: auto;
     padding: 2em;
@@ -965,30 +1055,43 @@ header i: nth-of-type(2) {
     position: relative;
     flex: auto;
 }
+
 .product-peppermint {
     background-color: #64e0ba;
 }
+
 .product-coconut {
     background-color: #f4badf;
 }
+
 .product-earl {
     background-color: #91c3e8;
 }
+
 .product-all {
-    background-color: #ccc}
-.product img,.product-peppermint img,.product-coconut img,.product-earl img,.product-all img {
+    background-color: #ccc
+}
+
+.product img,
+.product-peppermint img,
+.product-coconut img,
+.product-earl img,
+.product-all img {
     max-width: 100%;
     height: auto !important;
     text-align: center;
 }
+
 .product_inner {
     display: flex;
     align-items: center;
     flex-flow: column wrap;
 }
+
 .product_inner p {
     color: rgba(255, 255, 255, 0.9);
 }
+
 .product_inner button {
     border: 1px solid rgba(255, 255, 255, 0.5);
     color: #fff;
@@ -998,10 +1101,12 @@ header i: nth-of-type(2) {
     cursor: pointer;
     transition: background ease-in 0.25s;
 }
+
 .product_inner button:hover {
     background: rgba(255, 255, 255, 1);
     color: #2b2d42;
 }
+
 .product_inner button:before {
     font-family: 'sporting_grotesqueregular', Arial, sans-serif;
     font-weight: normal;
@@ -1011,9 +1116,11 @@ header i: nth-of-type(2) {
     font-size: 1.5em;
     margin: 0 -1.5em;
 }
+
 .product_inner button:hover:before {
     color: #2b2d42;
 }
+
 .product_overlay {
     background: rgba(255, 255, 255, 0.9);
     width: 100%;
@@ -1029,23 +1136,30 @@ header i: nth-of-type(2) {
     justify-content: center;
     align-items: center;
 }
+
 .product_overlay h2 {
     color: rgba(43, 45, 66, 0.7);
     font-size: 1.2em;
     margin: 1em 0;
 }
+
 .product_overlay i {
     color: rgba(43, 45, 66, 0.7);
     font-size: 1.5em;
 }
-.peppermint-shop2, .coconut-shop2, .earl-shop2 {
+
+.peppermint-shop2,
+.coconut-shop2,
+.earl-shop2 {
     display: none;
 }
+
 
 /*--------------------------------------------
                    Footer
 --------------------------------------------*/
- footer {
+
+footer {
     width: 100%;
     margin: auto;
     color: #ccc;
@@ -1055,100 +1169,76 @@ header i: nth-of-type(2) {
     font-size: 14px;
 }
 
+
 /*--------------------------------------------
                   MEDIA QUERIES
 --------------------------------------------*/
 
-
 @media only screen and (max-width: 768px) {
-
-    .mobile-h1{
-        display:block;
+    .mobile-h1 {
+        display: block;
     }
-
-.banner{display:none;}
-
-video {
-    display: none;
-}
-
-p{
-    font-size:14px;
-}
-    
-a{
-    font-size:12px;
-}
-
-.about-h1{
-    font-size:30px;
-    text-align:center;
-}
-
-.home-tea-images {
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.home-peppermint, .home-coconut{
-    width:60%;
-    margin:auto;
-    padding:40px;
-}
-
-.home-earl{
-    width:80%;
-    margin:auto;
-}
-
-
-.peppermint-wrapper, .coconut-wrapper, .earl-wrapper {
-    height: 100vh;
-    overflow-x: auto;
-    overflow-y: auto;
-    perspective: 200px;
-}
-.parallax_group {
-    position: relative;
-    height: 150vh;
-    width: 100%;
-    transform-style: preserve-3d;
-    margin: auto;
-}
-
-.peppermint-herbal, .green-coconut, .earl-gray{
-    font-size:40px;
-    padding-top:100px;
-}
-
-.intro-text {
-    grid-template-columns:1fr;
-
-}
-
-
-
-
-
-@media only screen and (min-width:1024px) {
-
-
-  
-
-}
-
-
-@media only screen and (min-width:1200px) {
-  .mobile-h1{
-        display:none;
+    .banner {
+        display: none;
     }
-
-
- }
-
-
-
+    video {
+        display: none;
+    }
+    p {
+        font-size: 14px;
+    }
+    a {
+        font-size: 12px;
+    }
+    .about-h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .home-tea-images {
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .home-peppermint,
+    .home-coconut {
+        width: 60%;
+        margin: auto;
+        padding: 40px;
+    }
+    .home-earl {
+        width: 80%;
+        margin: auto;
+    }
+    .peppermint-wrapper,
+    .coconut-wrapper,
+    .earl-wrapper {
+        height: 100vh;
+        overflow-x: auto;
+        overflow-y: auto;
+        perspective: 200px;
+    }
+    .parallax_group {
+        position: relative;
+        height: 150vh;
+        width: 100%;
+        transform-style: preserve-3d;
+        margin: auto;
+    }
+    .peppermint-herbal,
+    .green-coconut,
+    .earl-gray {
+        font-size: 40px;
+        padding-top: 100px;
+    }
+    .intro-text {
+        grid-template-columns: 1fr;
+    }
+    @media only screen and (min-width:1024px) {}
+    @media only screen and (min-width:1200px) {
+        .mobile-h1 {
+            display: none;
+        }
+    }
