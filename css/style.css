@@ -213,8 +213,8 @@ video {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: solid 2px purple;
     height: 100vh;
+    margin-bottom:200px;
    
 }
 
@@ -253,25 +253,65 @@ video {
     color: #64e0ba;
     font-size: 18px;
     text-align: center;
+    position:relative;
+    margin-top:-30px;
+     text-decoration: underline wavy #64e0ba;
+     display:none;
 }
 
 #coconut-learn {
     color: #f4badf;
     font-size: 18px;
     text-align: center;
+    position:relative;
+    margin-top:-30px;
+    text-decoration: underline wavy #f4badf;
+    display:none;
 }
 
 #earl-learn {
     color: #91c3e8;
     font-size: 18px;
     text-align: center;
+    position:relative;
+    margin-top:-20px;
+    text-decoration: underline wavy #91c3e8;
+    display:none;
+
 }
 
 #cinnamon-learn {
     color: #F28444;
     font-size: 18px;
     text-align: center;
+    position:relative;
+    margin-top:-30px;
+     text-decoration: underline wavy #F28444;
+     display:none;
 }
+
+
+
+#peppermint-container:hover #peppermint-learn {
+  display: block;
+}
+
+
+#coconut-container:hover #coconut-learn {
+  display: block;
+}
+
+
+#cinnamon-container:hover #cinnamon-learn {
+  display: block;
+}
+
+
+#earl-container:hover #earl-learn {
+  display: block;
+}
+
+
 
 
 /*
@@ -294,6 +334,17 @@ video {
     font-size: 40px;
     padding: 20px;
     margin-top: 30%;
+
+}
+
+.teas-h1 {
+    color: #000;
+    font-size: 40px;
+    padding: 20px;
+    margin-top: 30%;
+    text-align:center;
+    margin-bottom:80px;
+   
 }
 
 .about-img1 {

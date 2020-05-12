@@ -305,51 +305,53 @@
         </section>
     
             <div>
-                  <h2 class="our-teas"> Our Teas </h2>
+                  <h1 class="teas-h1"> Our Teas </h1>
 
             </div>
             <section class="home-tea-images">
                   
-                <div class="peppermint-container">
+                <div id="peppermint-container">
                     <a href="peppermint.html">
                         <img src='./images/home-peppermint.png' id="peppermint-hover-text" class="home-peppermint" alt="canister of peppermint herbal tea">
 
                     </a>
                     <img src='./images/home-peppermint-hover.png' class="home-peppermint-hover" alt="hover image of mint leaves of peppermint herbal tea">
 
-                 <p id="peppermint-learn" style="display: none">Peppermint Herbal</p>
+                 <p id="peppermint-learn">Peppermint Herbal</p>
 
                 </div>
 
-                <div class="coconut-container">
+                <div id="coconut-container">
                     <a href="coconut.html">
                         <img src='./images/home-coconut-hover.png' id="coconut-hover-text" class="home-coconut" alt="green tea with coconut tea tin">
                     </a>
                     <img src='./images/home-coconut-hover.png' class="home-coconut-hover" alt="hover image of coconut pieces">
 
-                    <p id="coconut-learn" style="display: none">Green Tea With Coconut</p>
+                    <p id="coconut-learn">Green Tea With Coconut</p>
                 </div>
 
 
-              <div>
-                    <a href="earl.html">
+              <div  id="cinnamon-container">
+                    <a href="cinnamon.html">
                         <img src='./images/home-cinnamon.png'  class="home-cinnamon" alt="cinnamon tea tin">
                     </a>
                      <img src='./images/home-cinnamon-hover.png' class="home-cinnamon-hover" alt="hover image of loose leaf tea">
                   
-                   <p id="cinnamon-learn" style="display: none">Hot Cinnamon Sunset</p>
+                   <p id="cinnamon-learn">Hot Cinnamon Sunset</p>
 
                    
                 </div>
 
 
-                <div>
+                <div id="earl-container">
                     <a href="earl.html">
                         <img src='./images/home-earl-hover.png'  class="home-earl" alt="earl gray tea tin">
                     </a>
                     <img src='./images/home-earl-hover.png' class="home-earl-hover" alt="hover image of loose leaf tea">
 
-                 <p id="earl-learn" style="display: none">Earl Gray</p>
+                 <p id="earl-learn">Earl Gray</p>
+
+
 
 
 
@@ -422,7 +424,7 @@
 
         });
 
-             $(function() {
+        $(function() {
             $(".home-cinnamon").on({
                 mouseenter: function() {
                     $(this).attr('src', './images/home-cinnamon-hover.png');
@@ -434,42 +436,9 @@
 
         });
 
-        var e = document.getElementById('peppermint-hover-text');
-        e.onmouseover = function() {
-            document.getElementById('peppermint-learn').style.display = 'block';
-        }
-        e.onmouseout = function() {
-            document.getElementById('peppermint-learn').style.display = 'none';
-        }
+</script>
 
-        var e = document.getElementById('coconut-hover-text');
-        e.onmouseover = function() {
-            document.getElementById('coconut-learn').style.display = 'block';
-        }
-        e.onmouseout = function() {
-            document.getElementById('coconut-learn').style.display = 'none';
-        }
 
-    
-        var e = document.getElementById('earl-hover-text');
-        e.onmouseover = function() {
-            document.getElementById('earl-learn').style.display = 'block';
-        }
-        e.onmouseout = function() {
-            document.getElementById('earl-learn').style.display = 'none';
-        }
-
-        var e = document.getElementById('cinnamon-hover-text');
-        e.onmouseover = function() {
-            document.getElementById('cinnamon-learn').style.display = 'block';
-        }
-        e.onmouseout = function() {
-            document.getElementById('cinnamon-learn').style.display = 'none';
-        }
-
-    
-
-    </script>
 <script>
     // init controller
     var controller = new ScrollMagic.Controller();
