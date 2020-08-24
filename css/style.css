@@ -328,7 +328,7 @@ video {
     height: 140vh;
     display: grid;
     grid-template-columns: 30% 40% 30%;
-    background-color: #FF8F01;
+
     margin-bottom:80px;
 }
 
